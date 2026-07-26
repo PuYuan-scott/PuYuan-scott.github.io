@@ -10,30 +10,41 @@ export default function AboutPage() {
     <div className="page-shell interior-page">
       <header className="page-intro">
         <p className="eyebrow">About</p>
-        <h1>Independent analysis, presented with clarity.</h1>
+        <h1>Research at the intersection of markets, data and valuation.</h1>
       </header>
 
       <div className="about-grid">
         <section>
-          <h2>Scott Yuan Research</h2>
+          <h2>About Scott Yuan</h2>
           <p>
-            Scott Yuan Research is an independent personal research
-            publication focused on equity research, investment analysis and
-            economic commentary.
+            Scott Yuan is a Toronto-based applied machine learning
+            professional and independent researcher focused on financial
+            markets, company fundamentals and quantitative analysis. He
+            currently works in model validation at TD Bank, where his work
+            includes financial-surveillance models and equity-return prediction
+            frameworks.
           </p>
           <p>
-            Research emphasizes fundamental business analysis, financial
-            statement interpretation, scenario-based valuation and the
-            relationship between operating performance and shareholder
-            returns.
+            His previous experience includes investment analytics at AGF
+            Investments and financial and operating analysis at Boston
+            Consulting Group. His research approach combines financial
+            statement analysis, scenario-based valuation, economic data and
+            rigorous model evaluation.
+          </p>
+          <p>
+            Scott holds a Master of Management Analytics from the University
+            of Toronto&apos;s Rotman School of Management and an Honours
+            Bachelor of Arts &amp; Science with High Distinction in Economics
+            and Statistics from the University of Toronto.
           </p>
         </section>
         <aside>
-          <p className="eyebrow">Coverage</p>
+          <p className="eyebrow">Background</p>
           <ul>
-            <li>Equity Research</li>
-            <li>Investment Reports</li>
-            <li>Economic Analysis</li>
+            <li>Senior Applied Machine Learning Scientist, TD Bank</li>
+            <li>Investment Analytics, AGF Investments</li>
+            <li>Management Analytics, Rotman</li>
+            <li>Economics &amp; Statistics, University of Toronto</li>
           </ul>
         </aside>
       </div>

@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vinext dev --port 3001",
     "build": "vinext build",
+    "build:pages": "GITHUB_PAGES=true next build",
     "postbuild": "node scripts/prepare-hosting.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "dev:next": "next dev",

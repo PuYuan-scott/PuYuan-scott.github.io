@@ -55,7 +55,7 @@ export const reports: ResearchReport[] = [
     ticker: "GOOG / GOOGL",
     published: "2026-07-26",
     displayDate: "July 26, 2026",
-    pages: 184,
+    pages: 185,
     abstract:
       "This report evaluates Alphabet’s Q2 2026 results across Search, YouTube, Google Cloud, AI monetization, infrastructure spending and valuation. Google Cloud was the quarter’s strongest operating contributor, while Search remained resilient as AI-powered products increased engagement. These positives were offset by sharply higher capital expenditures, negative quarterly free cash flow and rising infrastructure-related costs. The analysis separates recurring operating performance from material non-operating investment gains and develops normalized earnings, EBITDA, free-cash-flow and sum-of-the-parts valuations.",
     takeaways: [
@@ -63,7 +63,7 @@ export const reports: ResearchReport[] = [
       "Search remained resilient, but long-term AI economics depend on monetization exceeding inference and infrastructure costs.",
       "Elevated capital expenditure and negative near-term free cash flow remain the principal valuation risks.",
     ],
-    pdf: "/reports/alphabet-q2-2026-equity-research.pdf",
+    pdf: "/reports/alphabet_full_equity_research_report_q2_2026.pdf",
     featured: true,
   },
 ];

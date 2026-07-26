@@ -4,3 +4,5 @@ dist
 out
 .DS_Store
 npm-debug.log*
+.vinext/
+.wrangler/

@@ -631,6 +631,72 @@ nav a:focus-visible {
   line-height: 1.55;
 }
 
+.insight-framework {
+  margin: 34px 0;
+  padding: 24px 28px;
+  background: var(--white);
+  border-top: 2px solid var(--navy);
+  border-bottom: 1px solid var(--line);
+}
+
+.insight-framework p {
+  margin: 0;
+  padding: 11px 0;
+  color: var(--navy);
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  line-height: 1.55;
+}
+
+.insight-framework p + p {
+  border-top: 1px solid var(--soft-line);
+}
+
+.insight-table-wrap {
+  width: calc(100% + 120px);
+  margin: 31px 0 42px -60px;
+  overflow-x: auto;
+}
+
+.insight-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-top: 2px solid var(--navy);
+  font-family: var(--sans);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.insight-table th,
+.insight-table td {
+  padding: 14px 15px;
+  border-bottom: 1px solid var(--soft-line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.insight-table th {
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.insight-table td:first-child {
+  width: 34%;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.insight-table td:nth-child(2) {
+  width: 22%;
+  color: var(--navy);
+  white-space: nowrap;
+}
+
 .insight-article-footer {
   max-width: 760px;
   display: flex;
@@ -930,6 +996,19 @@ nav a:focus-visible {
   .insight-content blockquote {
     padding-left: 20px;
     font-size: 20px;
+  }
+
+  .insight-framework {
+    padding: 18px 20px;
+  }
+
+  .insight-table-wrap {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .insight-table {
+    min-width: 620px;
   }
 
   .insight-article-footer {

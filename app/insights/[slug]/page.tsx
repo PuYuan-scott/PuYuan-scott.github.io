@@ -54,6 +54,39 @@ function InsightContent({ block }: { block: InsightBlock }) {
       );
     case "quote":
       return <blockquote>{block.text}</blockquote>;
+    case "framework":
+      return (
+        <div className="insight-framework">
+          {block.items.map((item) => (
+            <p key={item}>{item}</p>
+          ))}
+        </div>
+      );
+    case "table":
+      return (
+        <div className="insight-table-wrap">
+          <table className="insight-table">
+            <thead>
+              <tr>
+                {block.headers.map((header) => (
+                  <th key={header} scope="col">
+                    {header}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {block.rows.map((row) => (
+                <tr key={row.join("|")}>
+                  {row.map((cell, index) => (
+                    <td key={`${cell}-${index}`}>{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
     case "paragraph":
       return <p>{block.text}</p>;
   }

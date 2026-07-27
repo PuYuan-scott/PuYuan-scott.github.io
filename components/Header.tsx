@@ -4,6 +4,7 @@ const navigation = [
   { href: "/equity-research", label: "Equity Research" },
   { href: "/investment-reports", label: "Investment Reports" },
   { href: "/economic-analysis", label: "Economic Analysis" },
+  { href: "/insights", label: "Insights" },
   { href: "/about", label: "About" },
 ];
 

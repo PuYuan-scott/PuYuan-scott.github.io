@@ -1,9 +1,20 @@
 import Link from "next/link";
 import ReportCard from "@/components/ReportCard";
+import { insightCategory } from "@/lib/insights";
 import { categories, reports } from "@/lib/reports";
 
 export default function Home() {
   const featuredReport = reports.find((report) => report.featured) ?? reports[0];
+  const coverageAreas = [
+    ...categories.map((category) => ({
+      ...category,
+      action: "View reports",
+    })),
+    {
+      ...insightCategory,
+      action: "Read insights",
+    },
+  ];
 
   return (
     <>
@@ -16,8 +27,8 @@ export default function Home() {
           <div className="hero-intro">
             <p>
               Company research, investment analysis and macroeconomic
-              commentary focused on business quality, capital allocation and
-              valuation.
+              commentary, complemented by short-form perspectives on markets,
+              businesses and valuation.
             </p>
             <Link className="text-link" href="/equity-research">
               View published research <span aria-hidden="true">→</span>
@@ -33,10 +44,10 @@ export default function Home() {
       <section className="page-shell categories-section">
         <div className="section-heading">
           <p className="eyebrow">Research Library</p>
-          <h2>Three areas of coverage.</h2>
+          <h2>Four areas of coverage.</h2>
         </div>
         <div className="category-grid">
-          {categories.map((category, index) => (
+          {coverageAreas.map((category, index) => (
             <Link
               className="category-card"
               href={`/${category.slug}`}
@@ -46,7 +57,7 @@ export default function Home() {
               <h3>{category.label}</h3>
               <p>{category.description}</p>
               <span className="text-link">
-                View reports <span aria-hidden="true">→</span>
+                {category.action} <span aria-hidden="true">→</span>
               </span>
             </Link>
           ))}

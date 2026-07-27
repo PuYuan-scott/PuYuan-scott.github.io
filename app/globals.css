@@ -372,7 +372,7 @@ nav a:focus-visible {
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   border-top: 1px solid var(--ink);
   border-bottom: 1px solid var(--ink);
 }
@@ -468,6 +468,184 @@ nav a:focus-visible {
 
 .empty-state p {
   color: var(--muted);
+}
+
+.insight-list {
+  display: grid;
+  gap: 24px;
+}
+
+.insight-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 210px;
+  gap: 55px;
+  padding: 38px 40px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  transition: border-color 160ms ease;
+}
+
+.insight-card:hover {
+  border-color: #aeb6bc;
+}
+
+.insight-card h2 {
+  max-width: 780px;
+  margin-bottom: 16px;
+  font-family: var(--serif);
+  font-size: clamp(27px, 3vw, 38px);
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  line-height: 1.18;
+}
+
+.insight-card h2 a:hover {
+  color: var(--navy);
+}
+
+.insight-summary {
+  max-width: 760px;
+  margin-bottom: 25px;
+  color: #39434c;
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.insight-card-meta,
+.insight-byline {
+  margin: 0;
+}
+
+.insight-card-meta div {
+  padding: 11px 0;
+  border-bottom: 1px solid var(--soft-line);
+}
+
+.insight-card-meta dt,
+.insight-byline dt {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.insight-card-meta dd,
+.insight-byline dd {
+  margin: 3px 0 0;
+  font-family: var(--serif);
+  font-size: 14px;
+}
+
+.insight-article {
+  max-width: 990px;
+  padding-top: 66px;
+  padding-bottom: 100px;
+}
+
+.insight-article-header {
+  padding-bottom: 44px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 52px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.back-link:hover {
+  color: var(--navy);
+}
+
+.insight-article h1 {
+  max-width: 900px;
+  margin-bottom: 24px;
+  font-family: var(--serif);
+  font-size: clamp(42px, 6vw, 68px);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.06;
+}
+
+.insight-deck {
+  max-width: 780px;
+  color: #39434c;
+  font-family: var(--serif);
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.insight-byline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 42px;
+  margin-top: 35px;
+}
+
+.insight-content {
+  max-width: 760px;
+  margin: 58px auto 0;
+  color: #27323a;
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.86;
+}
+
+.insight-content p {
+  margin-bottom: 28px;
+}
+
+.insight-content h2 {
+  margin: 52px 0 20px;
+  color: var(--ink);
+  font-size: 31px;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+}
+
+.insight-content ul {
+  margin: 0 0 31px;
+  padding-left: 24px;
+}
+
+.insight-content li {
+  margin-bottom: 11px;
+  padding-left: 5px;
+}
+
+.insight-content blockquote {
+  margin: 38px 0;
+  padding: 7px 0 7px 28px;
+  border-left: 3px solid var(--accent);
+  color: var(--navy);
+  font-size: 23px;
+  line-height: 1.55;
+}
+
+.insight-article-footer {
+  max-width: 760px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 65px auto 0;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.insight-article-footer p {
+  max-width: 500px;
+  color: var(--muted);
+  font-size: 11px;
 }
 
 .about-grid {
@@ -591,7 +769,8 @@ nav a:focus-visible {
   .hero-grid,
   .report-heading,
   .report-body,
-  .about-grid {
+  .about-grid,
+  .insight-card {
     grid-template-columns: 1fr;
     gap: 38px;
   }
@@ -712,6 +891,53 @@ nav a:focus-visible {
 
   .empty-state {
     padding: 34px 26px;
+  }
+
+  .insight-card {
+    padding: 29px 23px;
+  }
+
+  .insight-article {
+    padding-top: 44px;
+    padding-bottom: 70px;
+  }
+
+  .back-link {
+    margin-bottom: 38px;
+  }
+
+  .insight-article h1 {
+    font-size: 39px;
+  }
+
+  .insight-deck {
+    font-size: 18px;
+  }
+
+  .insight-byline {
+    gap: 22px 35px;
+  }
+
+  .insight-content {
+    margin-top: 40px;
+    font-size: 17px;
+  }
+
+  .insight-content h2 {
+    font-size: 27px;
+  }
+
+  .insight-content blockquote {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+
+  .insight-article-footer {
+    display: block;
+  }
+
+  .insight-article-footer .text-link {
+    margin-top: 12px;
   }
 }
 

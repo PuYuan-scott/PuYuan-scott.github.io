@@ -47,6 +47,207 @@ export const insightCategory = {
 
 export const insights: InsightArticle[] = [
   {
+    slug: "us-economy-still-expanding",
+    title:
+      "The U.S. Economy Is Still Expanding—but the Risks Have Not Disappeared",
+    topic: "U.S. Economy",
+    published: "2026-07-30",
+    displayDate: "July 30, 2026",
+    readingTime: 6,
+    abstract:
+      "The U.S. economy is currently best described as being in a late-cycle soft-landing phase, with meaningful reflation risk.",
+    content: [
+      {
+        type: "heading",
+        text: "Conclusion",
+      },
+      {
+        type: "paragraph",
+        text: "The U.S. economy is currently best described as being in a late-cycle soft-landing phase, with meaningful reflation risk.",
+      },
+      {
+        type: "paragraph",
+        text: "Headline GDP growth has slowed, hiring is weak, inflation remains above target, and financial conditions are restrictive. At the same time, consumer spending, business investment, and broad credit markets remain resilient. This explains why the equity market can continue rising even though economic and financial risks have not disappeared.",
+      },
+      {
+        type: "heading",
+        text: "Growth: Headline Weakness, Strong Private Demand",
+      },
+      {
+        type: "paragraph",
+        text: "Second-quarter real GDP grew at a 1.5% annualized rate, but real final sales to private domestic purchasers rose 3.9%. Consumer spending increased 3.2%, while nonresidential fixed investment rose 8.4%.",
+      },
+      {
+        type: "paragraph",
+        text: "This suggests that the weak GDP headline was partly driven by trade, inventories, and government components rather than a broad decline in private demand.",
+      },
+      {
+        type: "quote",
+        text: "Assessment: Positive but slowing headline growth, with strong underlying demand.",
+      },
+      {
+        type: "heading",
+        text: "Employment: Low Hiring, Low Layoffs",
+      },
+      {
+        type: "paragraph",
+        text: "Payroll growth has slowed, while the unemployment rate remains near 4.2%. The three-month average of payroll gains is still positive, and initial unemployment claims remain low.",
+      },
+      {
+        type: "paragraph",
+        text: "Companies are hiring cautiously, but they are not yet conducting broad layoffs.",
+      },
+      {
+        type: "quote",
+        text: "Assessment: Low hiring, low layoffs—a typical late-cycle condition.",
+      },
+      {
+        type: "heading",
+        text: "Inflation: Improving, but Still Elevated",
+      },
+      {
+        type: "paragraph",
+        text: "Core inflation momentum has moderated, but core PCE remains above the Federal Reserve’s 2% objective. Wage growth has also slowed, while long-term inflation expectations remain relatively stable.",
+      },
+      {
+        type: "paragraph",
+        text: "The main risk is that strong consumer spending and investment prevent inflation from returning smoothly to target.",
+      },
+      {
+        type: "quote",
+        text: "Assessment: Falling but still elevated, with continuing reflation risk.",
+      },
+      {
+        type: "heading",
+        text: "Financial Conditions: Restrictive",
+      },
+      {
+        type: "paragraph",
+        text: "The federal funds rate remains high, long-term real Treasury yields are elevated, and mortgage and refinancing costs continue to pressure housing and leveraged borrowers.",
+      },
+      {
+        type: "paragraph",
+        text: "Even though equity and corporate bond markets remain supportive, the real cost of capital is still restrictive.",
+      },
+      {
+        type: "quote",
+        text: "Assessment: Restrictive financial conditions.",
+      },
+      {
+        type: "heading",
+        text: "Credit: Stable Overall, but Tail-End Stress Is Building",
+      },
+      {
+        type: "paragraph",
+        text: "Broad high-yield credit spreads remain contained, suggesting that markets are not pricing an imminent recession or systemic crisis.",
+      },
+      {
+        type: "paragraph",
+        text: "However, stress is visible among:",
+      },
+      {
+        type: "list",
+        items: [
+          "CCC-rated borrowers",
+          "Lower-income consumers",
+          "Credit-card and auto-loan borrowers",
+          "Commercial real estate",
+          "Some private-credit and small-business borrowers",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Assessment: Credit remains loose overall, but weaker borrowers are under growing pressure.",
+      },
+      {
+        type: "heading",
+        text: "Six-to-Twelve-Month Scenario Outlook",
+      },
+      {
+        type: "table",
+        headers: ["Six-to-Twelve-Month Path", "Probability"],
+        rows: [
+          [
+            "Late-cycle soft landing, followed by a return to Goldilocks conditions",
+            "45%",
+          ],
+          [
+            "No landing or reflation, with interest rates remaining higher for longer",
+            "35%",
+          ],
+          ["Hard landing or recession", "15%"],
+          ["Credit crisis", "5%"],
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The base case is a soft landing in which inflation continues to decline, employment remains stable, and the Federal Reserve eventually lowers rates gradually.",
+      },
+      {
+        type: "paragraph",
+        text: "However, the relatively high probability of a no-landing or reflation scenario reflects the continued strength of consumer spending and business investment. If demand remains too strong, rates may stay high for longer and valuation pressure could increase.",
+      },
+      {
+        type: "heading",
+        text: "Why the Market Can Continue Rising",
+      },
+      {
+        type: "paragraph",
+        text: "The equity market remains supported by:",
+      },
+      {
+        type: "list",
+        items: [
+          "Resilient consumer demand",
+          "Strong AI and equipment investment",
+          "Stable broad credit spreads",
+          "Limited layoffs",
+          "Expectations of eventual monetary easing",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This environment can support further market gains, especially if corporate earnings remain strong.",
+      },
+      {
+        type: "paragraph",
+        text: "However, market strength does not mean that risk has disappeared. High valuations and tight credit spreads leave less room for disappointment if inflation reaccelerates, growth weakens, or credit stress spreads.",
+      },
+      {
+        type: "heading",
+        text: "What to Watch Next",
+      },
+      {
+        type: "paragraph",
+        text: "The most important indicators are:",
+      },
+      {
+        type: "list",
+        items: [
+          "Whether private domestic demand remains above 3%",
+          "Whether payroll growth approaches zero",
+          "Whether initial claims rise above roughly 240,000",
+          "Whether monthly core PCE returns to 0.3% or more",
+          "Whether long-term real yields remain above 2%",
+          "Whether high-yield spreads and household delinquencies begin rising more broadly",
+          "Whether AI-related capital spending continues to generate sufficient cash returns",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Final Assessment",
+      },
+      {
+        type: "paragraph",
+        text: "The U.S. economy is still expanding and is not currently showing the broad contraction associated with recession.",
+      },
+      {
+        type: "paragraph",
+        text: "The most likely path remains a late-cycle soft landing followed by a return to Goldilocks conditions. However, strong private demand, persistent inflation, restrictive real rates, and growing stress among weaker borrowers make the outlook fragile.",
+      },
+    ],
+  },
+  {
     slug: "ai-cash-returns",
     title: "The Market Is Shifting From AI Revenue Growth to AI Cash Returns",
     topic: "AI & Hyperscalers",

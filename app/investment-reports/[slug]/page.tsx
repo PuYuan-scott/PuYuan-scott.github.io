@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ArticleContent from "@/components/ArticleContent";
-import { insightBySlug, insights } from "@/lib/insights";
+import {
+  investmentArticleBySlug,
+  investmentArticles,
+} from "@/lib/investment-articles";
 
-type InsightPageProps = {
+type InvestmentArticlePageProps = {
   params: Promise<{ slug: string }>;
 };
 
@@ -12,54 +15,50 @@ export const dynamicParams = false;
 export const dynamic = "force-static";
 
 export function generateStaticParams() {
-  // Static export requires one path even before the first insight is published.
-  // This unlinked placeholder resolves through the site's 404 page.
-  if (insights.length === 0) {
-    return [{ slug: "__empty__" }];
-  }
-
-  return insights.map((insight) => ({ slug: insight.slug }));
+  return investmentArticles.map((article) => ({ slug: article.slug }));
 }
 
 export async function generateMetadata({
   params,
-}: InsightPageProps): Promise<Metadata> {
+}: InvestmentArticlePageProps): Promise<Metadata> {
   const { slug } = await params;
-  const insight = insightBySlug(slug);
+  const article = investmentArticleBySlug(slug);
 
-  if (!insight) {
+  if (!article) {
     return {};
   }
 
   return {
-    title: insight.title,
-    description: insight.abstract,
+    title: article.title,
+    description: article.abstract,
   };
 }
 
-export default async function InsightPage({ params }: InsightPageProps) {
+export default async function InvestmentArticlePage({
+  params,
+}: InvestmentArticlePageProps) {
   const { slug } = await params;
-  const insight = insightBySlug(slug);
+  const article = investmentArticleBySlug(slug);
 
-  if (!insight) {
+  if (!article) {
     notFound();
   }
 
   return (
     <article className="page-shell insight-article">
       <header className="insight-article-header">
-        <Link className="back-link" href="/insights">
-          <span aria-hidden="true">←</span> All insights
+        <Link className="back-link" href="/investment-reports">
+          <span aria-hidden="true">←</span> All investment reports
         </Link>
-        <p className="eyebrow">{insight.topic}</p>
-        {insight.company && (
+        <p className="eyebrow">{article.topic}</p>
+        {article.company && (
           <p className="company-name">
-            {insight.company}
-            {insight.ticker ? ` · ${insight.ticker}` : ""}
+            {article.company}
+            {article.ticker ? ` · ${article.ticker}` : ""}
           </p>
         )}
-        <h1>{insight.title}</h1>
-        <p className="insight-deck">{insight.abstract}</p>
+        <h1>{article.title}</h1>
+        <p className="insight-deck">{article.abstract}</p>
         <dl className="insight-byline">
           <div>
             <dt>By</dt>
@@ -67,17 +66,17 @@ export default async function InsightPage({ params }: InsightPageProps) {
           </div>
           <div>
             <dt>Published</dt>
-            <dd>{insight.displayDate}</dd>
+            <dd>{article.displayDate}</dd>
           </div>
           <div>
             <dt>Reading time</dt>
-            <dd>{insight.readingTime} min</dd>
+            <dd>{article.readingTime} min</dd>
           </div>
         </dl>
       </header>
 
       <div className="insight-content">
-        <ArticleContent content={insight.content} />
+        <ArticleContent content={article.content} />
       </div>
 
       <footer className="insight-article-footer">
@@ -85,8 +84,8 @@ export default async function InsightPage({ params }: InsightPageProps) {
           This article is for informational and educational purposes and does
           not constitute investment advice.
         </p>
-        <Link className="text-link" href="/insights">
-          More insights <span aria-hidden="true">→</span>
+        <Link className="text-link" href="/investment-reports">
+          More investment reports <span aria-hidden="true">→</span>
         </Link>
       </footer>
     </article>

@@ -3,9 +3,15 @@ import type { InsightArticle } from "@/lib/insights";
 
 type InsightCardProps = {
   insight: InsightArticle;
+  basePath?: string;
 };
 
-export default function InsightCard({ insight }: InsightCardProps) {
+export default function InsightCard({
+  insight,
+  basePath = "/insights",
+}: InsightCardProps) {
+  const articleHref = `${basePath}/${insight.slug}`;
+
   return (
     <article className="insight-card">
       <div className="insight-card-main">
@@ -17,10 +23,10 @@ export default function InsightCard({ insight }: InsightCardProps) {
           </p>
         )}
         <h2>
-          <Link href={`/insights/${insight.slug}`}>{insight.title}</Link>
+          <Link href={articleHref}>{insight.title}</Link>
         </h2>
         <p className="insight-summary">{insight.abstract}</p>
-        <Link className="text-link" href={`/insights/${insight.slug}`}>
+        <Link className="text-link" href={articleHref}>
           Read article <span aria-hidden="true">→</span>
         </Link>
       </div>

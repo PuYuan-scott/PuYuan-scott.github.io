@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import InsightCard from "@/components/InsightCard";
 import ReportCard from "@/components/ReportCard";
+import { sortedInvestmentArticles } from "@/lib/investment-articles";
 import {
   categories,
   reportsForCategory,
@@ -40,6 +42,12 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   }
 
   const categoryReports = reportsForCategory(category.slug as CategorySlug);
+  const categoryArticles =
+    category.slug === "investment-reports"
+      ? sortedInvestmentArticles()
+      : [];
+  const hasPublications =
+    categoryReports.length > 0 || categoryArticles.length > 0;
 
   return (
     <div className="page-shell interior-page">
@@ -50,10 +58,19 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       </header>
 
       <section className="report-list" aria-label={`${category.label} reports`}>
-        {categoryReports.length > 0 ? (
-          categoryReports.map((report) => (
-            <ReportCard key={report.slug} report={report} />
-          ))
+        {hasPublications ? (
+          <>
+            {categoryReports.map((report) => (
+              <ReportCard key={report.slug} report={report} />
+            ))}
+            {categoryArticles.map((article) => (
+              <InsightCard
+                basePath="/investment-reports"
+                insight={article}
+                key={article.slug}
+              />
+            ))}
+          </>
         ) : (
           <div className="empty-state">
             <span>Research archive</span>

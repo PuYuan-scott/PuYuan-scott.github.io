@@ -697,6 +697,19 @@ nav a:focus-visible {
   white-space: nowrap;
 }
 
+.insight-table-4,
+.insight-table-5 {
+  min-width: 850px;
+}
+
+.insight-table-4 td:first-child,
+.insight-table-4 td:nth-child(2),
+.insight-table-5 td:first-child,
+.insight-table-5 td:nth-child(2) {
+  width: auto;
+  white-space: normal;
+}
+
 .insight-article-footer {
   max-width: 760px;
   display: flex;

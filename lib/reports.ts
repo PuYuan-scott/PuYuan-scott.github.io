@@ -66,6 +66,25 @@ export const reports: ResearchReport[] = [
     pdf: "/reports/alphabet_full_equity_research_report_q2_2026.pdf",
     featured: true,
   },
+  {
+    slug: "economic-cycle-framework",
+    category: "economic-analysis",
+    categoryLabel: "Economic Analysis",
+    title:
+      "Economic Cycle Framework: Five-Dimension Assessment, Market Performance, and Late-Cycle Pathways",
+    published: "2026-07-29",
+    displayDate: "July 29, 2026",
+    pages: 31,
+    abstract:
+      "This report presents a five-dimension framework for assessing the economic cycle through growth, employment, inflation, financial conditions and credit. It defines practical thresholds for eight macroeconomic regimes, maps each regime to expected equity-market behavior, and outlines the decision rules and transmission mechanisms behind soft-landing, stagflation and hard-landing pathways.",
+    takeaways: [
+      "Economic regimes should be assessed through direction, duration and confirmation across all five dimensions rather than through isolated data points.",
+      "The late-cycle path depends primarily on whether inflation continues to decline and whether employment and credit remain stable.",
+      "Equity-market leadership, rate sensitivity and the relative performance of growth and defensive sectors vary systematically across the economic cycle.",
+    ],
+    pdf: "/reports/economic_cycle_framework.pdf",
+    featured: false,
+  },
 ];
 
 export function reportsForCategory(category: CategorySlug) {

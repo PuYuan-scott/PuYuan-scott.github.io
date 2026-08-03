@@ -1,3 +1,5 @@
+import { aiCapexCycleInsight } from "@/lib/ai-capex-cycle-insight";
+
 export type InsightBlock =
   | {
       type: "paragraph";
@@ -46,6 +48,7 @@ export const insightCategory = {
 };
 
 export const insights: InsightArticle[] = [
+  aiCapexCycleInsight,
   {
     slug: "us-economy-still-expanding",
     title:

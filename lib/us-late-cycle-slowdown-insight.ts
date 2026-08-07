@@ -2,60 +2,91 @@ import type { InsightArticle } from "@/lib/insights";
 
 export const usLateCycleSlowdownInsight: InsightArticle = {
   slug: "us-economy-late-cycle-slowdown-august-2026",
-  title: "The U.S. Economy Has Entered a Late-Cycle Slowdown",
+  title: "2024 Was a Growth Scare. 2026 Is a Policy Dilemma.",
   topic: "U.S. Economy",
   published: "2026-08-07",
   displayDate: "August 7, 2026",
-  readingTime: 6,
+  readingTime: 5,
   language: "en",
   fullReport: "/reports/us_late_cycle_slowdown_august_2026.pdf",
   abstract:
-    "The U.S. economy is still expanding, but the July employment report materially narrowed the margin of safety around the soft-landing outlook.",
+    "August 2024 looked more recessionary on the surface, but the Federal Reserve had room to respond. In August 2026, hiring is weaker and inflation is higher, leaving policymakers without an easy answer.",
   content: [
     {
       type: "heading",
-      text: "Core Conclusion",
+      text: "The Difference in One Sentence",
+    },
+    {
+      type: "quote",
+      text: "2024 was a growth scare with an available policy solution. 2026 is a labor-market slowdown with an inflation constraint.",
     },
     {
       type: "paragraph",
-      text: "I would now move the U.S. economy from a late-cycle soft-landing assessment to a late-cycle slowdown. The economy is moving toward a low-growth, high-inflation environment, but it has not entered a recession.",
+      text: "The July 2024 employment report frightened markets because unemployment rose quickly and initial claims increased. Yet payroll growth was still averaging about 170,000 per month, core PCE inflation had fallen to 2.6%, and the federal funds rate stood at 5.25–5.50%. If growth weakened further, the Federal Reserve had both the justification and the room to cut rates.",
     },
     {
       type: "paragraph",
-      text: "The economy itself is not in recession, but employment is showing clear signs of stalling. Hard-landing risk has therefore increased materially. Even so, private demand, manufacturing, productivity, and credit conditions do not yet support an immediate recession call.",
+      text: "The August 2026 setup is harder. Three-month average payroll growth has fallen to approximately 20,000, core PCE inflation remains at 3.3%, and the federal funds rate is already down to 3.50–3.75%. The labor market needs support, but inflation prevents an aggressive policy response.",
+    },
+    {
+      type: "heading",
+      text: "August 2024 vs. August 2026",
+    },
+    {
+      type: "table",
+      headers: ["Indicator", "August 2024", "August 2026"],
+      rows: [
+        ["Nonfarm payrolls", "+114K", "-23K"],
+        ["Three-month average payroll growth", "+170K per month", "Approximately +20K per month"],
+        ["Unemployment rate", "4.3%", "4.1%"],
+        ["Labor-force participation", "62.7%", "61.4%"],
+        ["Real GDP growth", "+2.8%", "+1.5%"],
+        ["Manufacturing PMI", "46.8", "55.6"],
+        ["Services PMI", "51.4", "54.1"],
+        ["Core PCE inflation", "2.6%", "3.3%"],
+        ["Federal funds rate", "5.25–5.50%", "3.50–3.75%"],
+        ["Broad credit stress", "Low", "Low"],
+      ],
+    },
+    {
+      type: "heading",
+      text: "Employment Is Weaker Now",
+    },
+    {
+      type: "paragraph",
+      text: "In 2024, payroll growth remained healthy despite the sudden rise in unemployment. In 2026, the pattern is reversed: payroll growth is near stall speed, but unemployment and layoffs have not yet surged. The economy has entered a very-low-hire environment without moving into high fire.",
+    },
+    {
+      type: "paragraph",
+      text: "That makes the current labor-market structure more fragile. Another zero or negative payroll reading would increase recession risk, especially if initial and continuing claims begin rising at the same time.",
+    },
+    {
+      type: "heading",
+      text: "Business Activity Is Stronger Now",
+    },
+    {
+      type: "paragraph",
+      text: "The evidence outside employment is less recessionary than it was in 2024. Manufacturing PMI has risen to 55.6 from 46.8, services PMI is 54.1, new orders remain strong, private domestic demand is growing 3.9%, and high-yield credit spreads remain near 300 basis points.",
     },
     {
       type: "framework",
       items: [
-        "GDP, consumption, AI capital expenditure, and manufacturing remain resilient.",
-        "Employment growth has weakened abruptly and materially.",
-        "Core inflation remains above 3%, limiting the Federal Reserve’s ability to cut rates quickly.",
+        "2024: manufacturing weakened alongside employment, a conventional growth scare.",
+        "2026: output, demand, and orders are expanding while employment stalls.",
+        "The output-employment divergence may reflect stronger productivity, automation, AI investment, and tighter cost control.",
       ],
     },
     {
       type: "heading",
-      text: "What the Employment Report Changed",
-    },
-    {
-      type: "table",
-      headers: ["Employment Indicator", "Latest", "Assessment"],
-      rows: [
-        ["Nonfarm Payrolls", "-23K", "Very weak"],
-        ["Market expectation", "Approximately +80K", "Large miss"],
-        ["May and June revisions", "-103K", "Material downward revision"],
-        ["Three-month average payroll growth", "Approximately +20K per month", "Near stall speed"],
-        ["Unemployment rate", "4.2% → 4.1%", "Superficial improvement"],
-        ["Labor-force participation rate", "61.4%", "Continued decline"],
-        ["Average hourly earnings, YoY", "+3.2%", "Easing wage pressure"],
-      ],
+      text: "Inflation Creates the Policy Dilemma",
     },
     {
       type: "paragraph",
-      text: "Following the revisions, payroll growth for May, June, and July was +63K, +20K, and -23K, respectively. The three-month average is now only about +20K. Under the original assessment framework, employment has moved beyond cooling and into deterioration.",
+      text: "In 2024, employment weakened while inflation was falling. The policy response was straightforward: the Federal Reserve could cut rates, loosen financial conditions, and support a soft landing.",
     },
     {
       type: "paragraph",
-      text: "The decline in unemployment should not be interpreted as an unambiguous positive. Approximately 264,000 people left the labor force, pushing participation down to 61.4%. Much of the improvement in unemployment came from labor-force exits rather than employment gains.",
+      text: "In 2026, employment is weakening while inflation remains above target. Raising rates could damage the labor market further, but cutting aggressively could reignite inflation. Holding rates avoids an immediate mistake but leaves restrictive real rates in place. Policy-error risk is therefore higher than it was in 2024.",
     },
     {
       type: "heading",
@@ -64,85 +95,27 @@ export const usLateCycleSlowdownInsight: InsightArticle = {
     {
       type: "list",
       items: [
-        "JOLTS shows that companies are hiring less, but layoffs and the layoff rate do not yet indicate broad workforce reductions.",
-        "Second-quarter real GDP grew 1.5%, while real final sales to private domestic purchasers increased 3.9%, indicating continued strength in private demand.",
-        "The Manufacturing PMI stands at 55.6 and the Services PMI at 54.1, with output and new orders still in expansionary territory.",
-        "High-yield credit spreads remain around 280–300 basis points, suggesting that credit markets are not pricing a systemic recession.",
+        "Manufacturing and services remain in expansionary territory.",
+        "Private domestic demand is still growing strongly.",
+        "Layoffs have not shifted from low fire to high fire.",
+        "High-yield credit spreads do not indicate systemic stress.",
       ],
     },
     {
-      type: "quote",
-      text: "The economy is in a low-hire environment, but it has not yet entered a high-fire environment. A recession would require layoffs, unemployment, income, consumption, and credit spreads to deteriorate together.",
+      type: "paragraph",
+      text: "The current environment is best described as a labor-market slowdown inside an otherwise still-expanding economy, with a meaningful stagflation tail risk. A recession call would require layoffs, claims, consumption, services activity, and credit spreads to deteriorate together.",
     },
     {
       type: "heading",
-      text: "The Economy’s Central Contradiction",
-    },
-    {
-      type: "paragraph",
-      text: "Business activity has not declined materially, but companies are increasingly reluctant to add employees. Second-quarter productivity grew 2.2% year over year, while unit labor costs increased only about 1.4%. Companies can therefore continue increasing output without adding many workers.",
-    },
-    {
-      type: "paragraph",
-      text: "Employment is therefore weakening faster than corporate fundamentals. However, core PCE inflation remains at 3.3%, preventing the Federal Reserve from cutting rates as quickly as it typically could ahead of a recession. The combination of weakening employment and insufficient disinflation is now the central macroeconomic risk.",
-    },
-    {
-      type: "heading",
-      text: "The Economy Across Ten Dimensions",
+      text: "The Three Paths Ahead",
     },
     {
       type: "table",
-      headers: ["Dimension", "Current Reading", "Signal"],
+      headers: ["Path", "What Would Confirm It"],
       rows: [
-        ["Growth", "GDP +1.5%; private demand +3.9%", "Slow but still expanding"],
-        ["Employment / Income", "NFP -23K; three-month average +20K", "Material deterioration"],
-        ["Inflation", "Core PCE 3.3%", "Still elevated"],
-        ["Consumer", "Strong real spending; 2.7% saving rate", "Resilient but vulnerable"],
-        ["Corporate / Productivity", "Productivity +2.2% YoY", "Strong"],
-        ["Manufacturing", "ISM 55.6", "Expansion"],
-        ["Services", "PMI 54.1; employment 47.4", "Strong output, weak employment"],
-        ["Housing", "Weak sales; 9.3 months of inventory", "Material weakness"],
-        ["Financial Conditions", "Federal funds rate 3.50–3.75%", "Restrictive"],
-        ["Credit", "High-yield spread approximately 300 bps", "No systemic stress"],
-      ],
-    },
-    {
-      type: "heading",
-      text: "Cycle Positioning and the Six-to-Twelve-Month Outlook",
-    },
-    {
-      type: "quote",
-      text: "A productivity-led late-cycle expansion with a rapidly weakening labor market and persistent inflation.",
-    },
-    {
-      type: "paragraph",
-      text: "I define the current cycle as a late-cycle slowdown. The economy has moved one step closer to recession but has not crossed that threshold. This can also be described as slowflation risk rather than established stagflation.",
-    },
-    {
-      type: "table",
-      headers: ["Six-to-Twelve-Month Scenario", "Probability"],
-      rows: [
-        ["Low-growth soft landing", "45%"],
-        ["Sticky inflation / no landing", "25%"],
-        ["Hard landing / recession", "25%"],
-        ["Credit crisis", "5%"],
-      ],
-    },
-    {
-      type: "paragraph",
-      text: "Compared with the previous assessment, the probability of a hard landing has increased from 15% to 25%, while the no-landing probability has declined from 35% to 25%. The labor market is not as strong as previously believed, but a soft landing remains the base case.",
-    },
-    {
-      type: "heading",
-      text: "The Four Most Important Indicators to Watch",
-    },
-    {
-      type: "list",
-      items: [
-        "CPI and core CPI: declining employment alongside falling inflation would support a soft landing; weakening employment alongside rising inflation would increase stagflation risk.",
-        "Initial and continuing claims: these will show whether companies are moving from low hire to high fire.",
-        "August payrolls and unemployment: another zero or negative payroll reading would require a further increase in the recession probability.",
-        "High-yield OAS: if employment weakens while spreads rise from about 300 basis points toward 400–450 basis points, the deterioration can no longer be dismissed as statistical noise.",
+        ["Growth scare / soft landing", "Inflation falls, payroll growth stabilizes, claims remain low, and ISM stays above 50"],
+        ["Stagflationary slowdown", "Payrolls remain negative, claims rise, services employment stays below 50, and core inflation remains above 3%"],
+        ["Recession", "Layoffs, claims, consumer weakness, sub-50 services activity, and high-yield spreads above 400–450 bps"],
       ],
     },
     {
@@ -150,42 +123,54 @@ export const usLateCycleSlowdownInsight: InsightArticle = {
       text: "Final Assessment",
     },
     {
-      type: "paragraph",
-      text: "Growth continues, employment has deteriorated materially, inflation remains elevated, financial conditions are restrictive, and credit is not yet under broad pressure. The final conclusion is not recession, but late-cycle slowdown.",
+      type: "quote",
+      text: "2024 looked more recessionary on the surface, but the Fed had an easier solution. In 2026, the economy is still expanding, but weak hiring and persistent inflation leave policymakers with no clean response.",
     },
     {
-      type: "quote",
-      text: "A soft landing remains the base case, but the margin of safety has narrowed materially. The main risk is shifting from an economy that is too strong, inflation that is too high, and further Federal Reserve tightening to employment that is increasingly weak while inflation fails to decline quickly enough.",
+      type: "paragraph",
+      text: "The main risk is not an immediate 2008-style recession. It is a continued deterioration in employment without enough weakness in demand or inflation to permit rapid monetary easing. That is why the next inflation report matters more now than it did during the 2024 growth scare.",
     },
     {
       type: "sources",
       items: [
         {
-          label: "BLS Employment Situation",
+          label: "BLS Employment Situation, July 2024",
+          url: "https://www.bls.gov/news.release/archives/empsit_08022024.htm",
+        },
+        {
+          label: "BLS Employment Situation, July 2026",
           url: "https://www.bls.gov/news.release/empsit.nr0.htm",
         },
         {
-          label: "BLS JOLTS",
+          label: "BLS JOLTS, June 2026",
           url: "https://www.bls.gov/news.release/jolts.nr0.htm",
+        },
+        {
+          label: "BEA GDP, Second Quarter 2024",
+          url: "https://www.bea.gov/news/2024/gross-domestic-product-second-quarter-2024-advance-estimate",
         },
         {
           label: "BEA GDP, Second Quarter 2026",
           url: "https://www.bea.gov/news/2026/gdp-advance-estimate-2nd-quarter-2026",
         },
         {
-          label: "BLS Productivity and Costs",
-          url: "https://www.bls.gov/news.release/prod2.nr0.htm",
+          label: "BEA Personal Income and Outlays, June 2024",
+          url: "https://www.bea.gov/news/blog/2024-07-26/personal-income-and-outlays-june-2024",
         },
         {
-          label: "BEA Personal Income and Outlays",
+          label: "BEA Personal Income and Outlays, June 2026",
           url: "https://www.bea.gov/news/2026/personal-income-and-outlays-june-2026",
         },
         {
-          label: "Federal Reserve FOMC Statement",
+          label: "Federal Reserve FOMC Statement, July 2024",
+          url: "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240731a.htm",
+        },
+        {
+          label: "Federal Reserve FOMC Statement, July 2026",
           url: "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
         },
         {
-          label: "FRED High Yield Option-Adjusted Spread",
+          label: "FRED U.S. High-Yield Option-Adjusted Spread",
           url: "https://fred.stlouisfed.org/data/BAMLH0A2HYB",
         },
       ],

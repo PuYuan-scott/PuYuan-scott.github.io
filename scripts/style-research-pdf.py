@@ -138,6 +138,37 @@ def add_economic_cycle_outline(
     writer.set_page_mode("/UseOutlines")
 
 
+def copy_source_outline(reader: PdfReader, writer: PdfWriter) -> None:
+    def add_items(
+        items: list[object],
+        parent: object | None = None,
+    ) -> None:
+        last_item: object | None = None
+        for item in items:
+            if isinstance(item, list):
+                add_items(item, last_item or parent)
+                continue
+
+            try:
+                page_index = reader.get_destination_page_number(item)
+            except Exception:
+                continue
+            if page_index is None or page_index < 0:
+                continue
+
+            title = getattr(item, "title", str(item))
+            last_item = writer.add_outline_item(
+                title,
+                page_index,
+                parent=parent,
+            )
+
+    source_outline = reader.outline
+    if source_outline:
+        add_items(source_outline)
+        writer.set_page_mode("/UseOutlines")
+
+
 def style_pdf(
     source: Path,
     destination: Path,
@@ -236,6 +267,8 @@ def style_pdf(
 
     if economic_cycle_outline:
         add_economic_cycle_outline(writer, bookmark_pages)
+    else:
+        copy_source_outline(reader, writer)
 
     destination.parent.mkdir(parents=True, exist_ok=True)
     with destination.open("wb") as output:

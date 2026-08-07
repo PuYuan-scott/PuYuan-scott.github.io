@@ -10,6 +10,7 @@
     "start": "wrangler dev --config dist/server/wrangler.json",
     "dev:next": "next dev",
     "build:next": "next build",
+    "build:economic-update": "bash scripts/build-economic-update-pdf.sh",
     "deploy:vinext": "vinext-cloudflare deploy --config dist/server/wrangler.json"
   },
   "dependencies": {

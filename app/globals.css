@@ -710,6 +710,34 @@ nav a:focus-visible {
   white-space: normal;
 }
 
+.insight-sources {
+  margin-top: 58px;
+  padding-top: 4px;
+  border-top: 1px solid var(--line);
+}
+
+.insight-sources ol {
+  margin: 0;
+  padding-left: 24px;
+  font-family: var(--sans);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.insight-sources li {
+  margin-bottom: 9px;
+}
+
+.insight-sources a {
+  color: var(--navy);
+  border-bottom: 1px solid var(--line);
+}
+
+.insight-sources a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 .insight-article-footer {
   max-width: 760px;
   display: flex;
@@ -725,6 +753,14 @@ nav a:focus-visible {
   max-width: 500px;
   color: var(--muted);
   font-size: 11px;
+}
+
+.insight-article-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  white-space: nowrap;
 }
 
 .about-grid {
@@ -1030,6 +1066,15 @@ nav a:focus-visible {
 
   .insight-article-footer .text-link {
     margin-top: 12px;
+  }
+
+  .insight-article-links {
+    align-items: flex-start;
+    margin-top: 12px;
+  }
+
+  .insight-article-links .text-link {
+    margin-top: 0;
   }
 }
 

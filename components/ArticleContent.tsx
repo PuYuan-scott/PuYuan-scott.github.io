@@ -53,6 +53,21 @@ function ArticleBlock({ block }: { block: InsightBlock }) {
           </table>
         </div>
       );
+    case "sources":
+      return (
+        <section className="insight-sources" aria-label="Sources">
+          <h2>Sources</h2>
+          <ol>
+            {block.items.map((source) => (
+              <li key={source.url}>
+                <a href={source.url} target="_blank" rel="noreferrer">
+                  {source.label}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </section>
+      );
     case "paragraph":
       return <p>{block.text}</p>;
   }

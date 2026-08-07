@@ -46,7 +46,10 @@ export default async function InsightPage({ params }: InsightPageProps) {
   }
 
   return (
-    <article className="page-shell insight-article">
+    <article
+      className="page-shell insight-article"
+      lang={insight.language ?? "en"}
+    >
       <header className="insight-article-header">
         <Link className="back-link" href="/insights">
           <span aria-hidden="true">←</span> All insights
@@ -85,9 +88,21 @@ export default async function InsightPage({ params }: InsightPageProps) {
           This article is for informational and educational purposes and does
           not constitute investment advice.
         </p>
-        <Link className="text-link" href="/insights">
-          More insights <span aria-hidden="true">→</span>
-        </Link>
+        <div className="insight-article-links">
+          {insight.fullReport && (
+            <a
+              className="text-link"
+              href={insight.fullReport}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Full report PDF <span aria-hidden="true">↗</span>
+            </a>
+          )}
+          <Link className="text-link" href="/insights">
+            More insights <span aria-hidden="true">→</span>
+          </Link>
+        </div>
       </footer>
     </article>
   );

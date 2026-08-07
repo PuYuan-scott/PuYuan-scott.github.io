@@ -46,6 +46,24 @@ export const categories: {
 
 export const reports: ResearchReport[] = [
   {
+    slug: "us-late-cycle-slowdown-august-2026",
+    category: "economic-analysis",
+    categoryLabel: "Economic Analysis",
+    title: "The U.S. Economy Has Entered a Late-Cycle Slowdown",
+    published: "2026-08-07",
+    displayDate: "August 7, 2026",
+    pages: 13,
+    abstract:
+      "The July employment report materially changed the U.S. economic-cycle assessment. Payrolls declined, prior months were revised lower and the three-month average approached stall speed. Yet private domestic demand, manufacturing activity, productivity and broad credit conditions remain resilient. The economy is best described as a late-cycle slowdown: soft landing remains the base case, but the margin of safety has narrowed and hard-landing risk has increased.",
+    takeaways: [
+      "The labor market has moved beyond gradual cooling: the three-month average payroll gain is now only about 20,000 per month.",
+      "A recession call remains premature because private demand is growing, layoffs are contained and high-yield credit spreads remain near 300 basis points.",
+      "Soft landing remains the 45% base case, but hard-landing risk has increased from 15% to 25% as employment weakens while core inflation remains above 3%.",
+    ],
+    pdf: "/reports/us_late_cycle_slowdown_august_2026.pdf",
+    featured: false,
+  },
+  {
     slug: "ai-capex-cycle-cash-return-phase",
     category: "equity-research",
     categoryLabel: "Equity Research",

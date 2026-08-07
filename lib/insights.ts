@@ -1,4 +1,5 @@
 import { aiCapexCycleInsight } from "@/lib/ai-capex-cycle-insight";
+import { usLateCycleSlowdownInsight } from "@/lib/us-late-cycle-slowdown-insight";
 
 export type InsightBlock =
   | {
@@ -25,6 +26,13 @@ export type InsightBlock =
       type: "table";
       headers: string[];
       rows: string[][];
+    }
+  | {
+      type: "sources";
+      items: {
+        label: string;
+        url: string;
+      }[];
     };
 
 export type InsightArticle = {
@@ -36,6 +44,8 @@ export type InsightArticle = {
   published: string;
   displayDate: string;
   readingTime: number;
+  language?: string;
+  fullReport?: string;
   abstract: string;
   content: InsightBlock[];
 };
@@ -48,6 +58,7 @@ export const insightCategory = {
 };
 
 export const insights: InsightArticle[] = [
+  usLateCycleSlowdownInsight,
   aiCapexCycleInsight,
   {
     slug: "us-economy-still-expanding",

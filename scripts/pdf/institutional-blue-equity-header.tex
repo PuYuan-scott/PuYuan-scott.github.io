@@ -68,31 +68,48 @@
 \providecommand{\@subtitle}{}
 \renewcommand{\maketitle}{
   \begin{titlepage}
-    \pagecolor{black}\color{white}
+    \pagecolor{white}\color{ResearchInk}
     \thispagestyle{empty}
-    \vspace*{16mm}
-    {\sffamily\small\bfseries\color{ResearchSky}SCOTT YUAN RESEARCH\par}
-    \vspace{3mm}
-    {\color{ResearchBlue}\rule{\textwidth}{2.4pt}\par}
-    \vspace{11mm}
-    \noindent\colorbox{ResearchBanner}{%
-      \parbox{\dimexpr\textwidth-2\fboxsep\relax}{%
-        \ResearchDisplay\color{white}
-        {\fontsize{15}{19}\selectfont\bfseries AI INFRASTRUCTURE\par}
-        \vspace{5mm}
-        {\fontsize{20}{25}\selectfont\bfseries FULL EQUITY RESEARCH REPORT\par}
-        \vspace{8mm}
-        {\fontsize{27}{33}\selectfont\bfseries\@title\par}
-        \vspace{7mm}
-        {\fontsize{11}{15}\selectfont\bfseries\@subtitle\par}}}
+    \vspace*{9mm}
+    \begingroup
+      \setlength{\fboxsep}{3.2pt}%
+      \noindent\colorbox{black}{%
+        \parbox{\dimexpr\textwidth-2\fboxsep\relax}{%
+          \sffamily\normalsize\bfseries\color{white}SCOTT YUAN RESEARCH}}
+    \endgroup
+    \vspace{0.6mm}
+    {\color{ResearchBanner}\rule{\textwidth}{1.5pt}\par}
+    \vspace{16mm}
+    \noindent\makebox[\textwidth][c]{%
+      \begingroup
+      \setlength{\fboxsep}{0pt}%
+      \colorbox{ResearchBanner}{%
+        \parbox{0.90\textwidth}{%
+          \vspace{6mm}\hspace{4mm}%
+          \parbox{\dimexpr0.90\textwidth-8mm\relax}{%
+            \ResearchDisplay\color{white}
+            {\fontsize{15}{19}\selectfont\bfseries AI INFRASTRUCTURE\par}
+            \vspace{5mm}
+            {\fontsize{20}{25}\selectfont\bfseries FULL EQUITY RESEARCH REPORT\par}
+            \vspace{8mm}
+            {\fontsize{25}{31}\selectfont\bfseries\@title\par}
+            \vspace{7mm}
+            {\fontsize{11}{15}\selectfont\bfseries\@subtitle\par}}%
+          \vspace{6mm}}}%
+      \endgroup}
+    \vspace{18mm}
+    \noindent\begin{minipage}{0.90\textwidth}
+      {\sffamily\normalsize\bfseries\color{ResearchNavy}Independent Research \textbar{} Institutional Blue, White \& Black Edition\par}
+      \vspace{1.2mm}
+      {\color{black}\rule{\textwidth}{1.1pt}\par}
+      \vspace{2mm}
+      {\sffamily\small\color{ResearchMuted}Published \@date\par}
+      \vspace{3mm}
+      {\sffamily\small\color{ResearchInk}Independent research on AI infrastructure, capital intensity, cash returns and valuation.\par}
+      \vspace{3mm}
+      {\color{ResearchBanner}\rule{0.82\textwidth}{1.5pt}\par}
+    \end{minipage}
     \vfill
-    {\color{ResearchBlue}\rule{\textwidth}{0.9pt}\par}
-    \vspace{6mm}
-    {\sffamily\normalsize\bfseries Independent Research \textbar{} Institutional Blue, White \& Black Edition\par}
-    \vspace{2mm}
-    {\sffamily\small\color{ResearchSky}Published \@date\par}
-    \vspace{8mm}
-    {\sffamily\scriptsize\color{ResearchSky}Independent research on AI infrastructure, capital intensity, cash returns and valuation.\par}
   \end{titlepage}
   \pagecolor{white}\color{ResearchInk}
   \pagestyle{institutional}

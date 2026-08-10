@@ -16,6 +16,7 @@ export type ResearchReport = {
   abstract: string;
   takeaways: string[];
   pdf: string;
+  spreadsheet?: string;
   featured: boolean;
 };
 
@@ -53,7 +54,7 @@ export const reports: ResearchReport[] = [
     company: "Micron · SK hynix · Samsung Electronics",
     published: "2026-08-10",
     displayDate: "August 10, 2026",
-    pages: 11,
+    pages: 17,
     abstract:
       "The proprietary Memory Cycle Tracker places Micron, SK hynix and Samsung Electronics in Stage 10—Price-Led Roll-Over. Forward EBITDA estimates are still rising, but revision momentum has deteriorated sharply and all three stocks have turned lower. The synchronized signal marks a late-cycle inflection point rather than a confirmed earnings downturn.",
     takeaways: [
@@ -61,7 +62,8 @@ export const reports: ResearchReport[] = [
       "SK hynix shows the most advanced deterioration, while Micron retains the strongest revision profile and Samsung offers greater business diversification.",
       "Low forward EV/EBITDA multiples may reflect peak-cycle earnings rather than a durable valuation floor.",
     ],
-    pdf: "/reports/memory_cycle_at_an_inflection_point.pdf",
+    pdf: "/reports/Memory%20Cycle%20research.pdf",
+    spreadsheet: "/reports/memory_cycle_with_cycle_stages_no_charts.xlsx",
     featured: false,
   },
   {

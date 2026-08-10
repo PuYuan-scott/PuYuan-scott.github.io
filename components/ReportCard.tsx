@@ -66,7 +66,19 @@ export default function ReportCard({
           Open PDF
           <span aria-hidden="true">↗</span>
         </a>
-        <span className="file-note">PDF · {report.pages} pages</span>
+        {report.spreadsheet && (
+          <a
+            className="button button-secondary"
+            href={report.spreadsheet}
+            download
+          >
+            Download Excel
+            <span aria-hidden="true">↓</span>
+          </a>
+        )}
+        <span className="file-note">
+          PDF · {report.pages} pages{report.spreadsheet ? " · XLSX" : ""}
+        </span>
       </div>
     </article>
   );

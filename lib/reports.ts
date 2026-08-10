@@ -89,7 +89,7 @@ export const reports: ResearchReport[] = [
     title: "The AI CapEx Cycle Is Entering Its Cash-Return Phase",
     published: "2026-08-03",
     displayDate: "August 3, 2026",
-    pages: 19,
+    pages: 15,
     abstract:
       "The AI infrastructure cycle is entering a more demanding stage. The next phase will be defined less by how much capital is deployed and more by whether those assets can generate sufficient utilization, revenue and cash returns. The central investment question is whether AI-related revenue and cash contribution can grow faster than depreciation, infrastructure operating costs and replacement investment.",
     takeaways: [

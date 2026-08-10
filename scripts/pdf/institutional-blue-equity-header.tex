@@ -1,0 +1,125 @@
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{etoolbox}
+
+\definecolor{ResearchNavy}{HTML}{071A2B}
+\definecolor{ResearchBlue}{HTML}{1769A6}
+\definecolor{ResearchBanner}{HTML}{7FA7CF}
+\definecolor{ResearchSky}{HTML}{DCEAF4}
+\definecolor{ResearchIce}{HTML}{F3F7FA}
+\definecolor{ResearchInk}{HTML}{111820}
+\definecolor{ResearchMuted}{HTML}{586675}
+\definecolor{ResearchRule}{HTML}{B8C7D3}
+\newfontfamily\ResearchDisplay{Rockwell}
+
+\pagecolor{white}
+\color{ResearchInk}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.52em}
+\setlist[itemize]{leftmargin=1.45em,itemsep=0.12em,topsep=0.25em,parsep=0pt}
+\setlist[enumerate]{leftmargin=1.65em,itemsep=0.18em,topsep=0.25em,parsep=0pt}
+\renewcommand{\arraystretch}{1.22}
+\AtBeginEnvironment{longtable}{\small\sffamily\setlength{\tabcolsep}{5pt}}
+
+\renewenvironment{quote}
+  {\begin{list}{}{\setlength{\leftmargin}{1.2em}\setlength{\rightmargin}{0.5em}}
+   \item\relax\color{ResearchNavy}\large\bfseries
+   \textcolor{ResearchBlue}{\rule{2pt}{1.25em}}\hspace{0.65em}}
+  {\end{list}}
+
+\makeatletter
+\let\researcholdsection\section
+\newcommand{\researchsection}[1]{%
+  \par\addpenalty{-\@highpenalty}\addvspace{2.6ex}%
+  \refstepcounter{section}%
+  \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}%
+  \noindent\colorbox{ResearchBanner}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+      \ResearchDisplay\color{white}\fontsize{17}{21}\selectfont\bfseries\thesection.\enspace #1}}%
+  \par\nobreak\vspace{1.05ex}%
+}
+\renewcommand{\section}{\@ifstar{\researcholdsection*}{\researchsection}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+  {-2.2ex \@plus -.8ex \@minus -.2ex}%
+  {0.75ex \@plus .2ex}%
+  {\normalfont\fontsize{13}{16}\selectfont\bfseries\color{ResearchBlue}}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+  {-1.7ex \@plus -.6ex \@minus -.2ex}%
+  {0.55ex \@plus .2ex}%
+  {\normalfont\fontsize{11}{14}\selectfont\bfseries\color{ResearchNavy}}}
+
+\def\ps@institutional{%
+  \def\@oddhead{\vbox{\hbox to\textwidth{%
+    \footnotesize\sffamily\bfseries\color{ResearchNavy}SCOTT YUAN RESEARCH\hfil
+    \normalfont\color{ResearchMuted}AI INFRASTRUCTURE EQUITY RESEARCH}%
+    \vspace{2pt}\color{ResearchBlue}\hrule height 0.6pt}}%
+  \let\@evenhead\@oddhead
+  \def\@oddfoot{\hbox to\textwidth{%
+    \scriptsize\sffamily\color{ResearchMuted}Independent research \textbar{} Not investment advice\hfil
+    Page \thepage}}%
+  \let\@evenfoot\@oddfoot
+}
+\pagestyle{institutional}
+\setlength{\headheight}{14pt}
+
+\providecommand{\@subtitle}{}
+\renewcommand{\maketitle}{
+  \begin{titlepage}
+    \pagecolor{black}\color{white}
+    \thispagestyle{empty}
+    \vspace*{16mm}
+    {\sffamily\small\bfseries\color{ResearchSky}SCOTT YUAN RESEARCH\par}
+    \vspace{3mm}
+    {\color{ResearchBlue}\rule{\textwidth}{2.4pt}\par}
+    \vspace{11mm}
+    \noindent\colorbox{ResearchBanner}{%
+      \parbox{\dimexpr\textwidth-2\fboxsep\relax}{%
+        \ResearchDisplay\color{white}
+        {\fontsize{15}{19}\selectfont\bfseries AI INFRASTRUCTURE\par}
+        \vspace{5mm}
+        {\fontsize{20}{25}\selectfont\bfseries FULL EQUITY RESEARCH REPORT\par}
+        \vspace{8mm}
+        {\fontsize{27}{33}\selectfont\bfseries\@title\par}
+        \vspace{7mm}
+        {\fontsize{11}{15}\selectfont\bfseries\@subtitle\par}}}
+    \vfill
+    {\color{ResearchBlue}\rule{\textwidth}{0.9pt}\par}
+    \vspace{6mm}
+    {\sffamily\normalsize\bfseries Independent Research \textbar{} Institutional Blue, White \& Black Edition\par}
+    \vspace{2mm}
+    {\sffamily\small\color{ResearchSky}Published \@date\par}
+    \vspace{8mm}
+    {\sffamily\scriptsize\color{ResearchSky}Independent research on AI infrastructure, capital intensity, cash returns and valuation.\par}
+  \end{titlepage}
+  \pagecolor{white}\color{ResearchInk}
+  \pagestyle{institutional}
+  \setcounter{page}{2}
+}
+\makeatother
+
+\makeatletter
+\renewcommand{\tableofcontents}{%
+  \clearpage
+  \noindent\colorbox{ResearchBanner}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+      \color{white}\fontsize{18}{22}\selectfont\bfseries CONTENTS}}%
+  \vspace{1.2em}
+  \@starttoc{toc}%
+  \clearpage
+}
+\makeatother
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{2}
+\AtBeginDocument{\hypersetup{
+  colorlinks=true,
+  linkcolor=ResearchNavy,
+  urlcolor=ResearchBlue,
+  citecolor=ResearchBlue,
+  pdfpagemode=UseOutlines,
+  bookmarksopen=true,
+  bookmarksnumbered=true,
+  bookmarksdepth=2
+}}

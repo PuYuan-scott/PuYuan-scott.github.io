@@ -50,5 +50,16 @@ Source: `content/drafts/memory-cycle-price-led-rollover-equity-research.md`
 
 Output: `public/reports/memory_cycle_at_an_inflection_point.pdf`
 
+The AI CapEx Cycle equity-research report is maintained as Markdown and
+rendered in the institutional blue, white, and black format with:
+
+```bash
+npm run build:ai-capex-report
+```
+
+Source: `content/drafts/ai-capex-cycle-cash-return-phase-equity-research.md`
+
+Output: `public/reports/ai_capex_cycle_cash_return_phase.pdf`
+
 Research reports are published for informational, educational, and analytical
 purposes only and do not constitute investment advice.

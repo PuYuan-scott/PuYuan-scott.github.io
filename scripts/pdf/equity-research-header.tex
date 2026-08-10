@@ -1,0 +1,76 @@
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{etoolbox}
+
+\definecolor{ResearchPaper}{HTML}{F8F7F3}
+\definecolor{ResearchInk}{HTML}{101820}
+\definecolor{ResearchGold}{HTML}{A57B42}
+\definecolor{ResearchMuted}{HTML}{5E6872}
+
+\pagecolor{ResearchPaper}
+\color{ResearchInk}
+
+\setlist[itemize]{leftmargin=1.6em,itemsep=0.25em,topsep=0.5em}
+\setlist[enumerate]{leftmargin=1.8em,itemsep=0.35em,topsep=0.5em}
+\renewcommand{\arraystretch}{1.3}
+\AtBeginEnvironment{longtable}{\footnotesize\sffamily}
+
+\renewenvironment{quote}
+  {\begin{list}{}{\setlength{\leftmargin}{1.5em}\setlength{\rightmargin}{0.5em}}
+   \item\relax\color{ResearchInk}\large\itshape
+   \textcolor{ResearchGold}{\rule{1.5pt}{1.2em}}\hspace{0.7em}}
+  {\end{list}}
+
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+  {-3.2ex \@plus -1ex \@minus -.2ex}%
+  {1.4ex \@plus .2ex}%
+  {\normalfont\LARGE\bfseries\color{ResearchInk}}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+  {-2.6ex \@plus -1ex \@minus -.2ex}%
+  {0.9ex \@plus .2ex}%
+  {\normalfont\Large\bfseries\color{ResearchInk}}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+  {-2.0ex \@plus -.8ex \@minus -.2ex}%
+  {0.7ex \@plus .2ex}%
+  {\normalfont\large\bfseries\color{ResearchInk}}}
+
+\def\ps@research{%
+  \def\@oddhead{\hbox to\textwidth{%
+    \footnotesize\sffamily\color{ResearchMuted}SCOTT YUAN RESEARCH\hfil MEMORY SEMICONDUCTORS}}%
+  \let\@evenhead\@oddhead
+  \def\@oddfoot{\hbox to\textwidth{%
+    \color{ResearchGold}\rule{14mm}{1.2pt}\hfil
+    \footnotesize\sffamily\color{ResearchMuted}\thepage}}%
+  \let\@evenfoot\@oddfoot
+}
+\pagestyle{research}
+
+\providecommand{\@subtitle}{}
+\renewcommand{\maketitle}{
+  \begin{titlepage}
+    \pagecolor{ResearchInk}\color{white}
+    \vspace*{24mm}
+    {\color{ResearchGold}\rule{34mm}{2.2pt}}\\[18mm]
+    {\sffamily\small\bfseries\color{ResearchGold}\MakeUppercase{Equity Research}}\\[13mm]
+    {\fontsize{30}{37}\selectfont\bfseries\@title\par}
+    \vspace{9mm}
+    {\fontsize{14}{21}\selectfont\color{ResearchPaper}\@subtitle\par}
+    \vfill
+    {\color{ResearchGold}\rule{\textwidth}{0.8pt}}\\[7mm]
+    {\sffamily\large\@author\par}
+    {\sffamily\normalsize\color{ResearchPaper}\@date\par}
+    \vspace{7mm}
+    {\sffamily\footnotesize\color{ResearchPaper}
+      Independent research for informational and educational purposes only.\par}
+  \end{titlepage}
+  \pagecolor{ResearchPaper}\color{ResearchInk}
+  \pagestyle{research}
+  \setcounter{page}{1}
+}
+\makeatother
+
+\renewcommand{\contentsname}{Contents}

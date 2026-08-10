@@ -1,4 +1,5 @@
 import { aiCapexCycleInsight } from "@/lib/ai-capex-cycle-insight";
+import { memoryCycleInsight } from "@/lib/memory-cycle-insight";
 import { usLateCycleSlowdownInsight } from "@/lib/us-late-cycle-slowdown-insight";
 
 export type InsightBlock =
@@ -58,6 +59,7 @@ export const insightCategory = {
 };
 
 export const insights: InsightArticle[] = [
+  memoryCycleInsight,
   usLateCycleSlowdownInsight,
   aiCapexCycleInsight,
   {

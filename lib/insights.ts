@@ -47,6 +47,7 @@ export type InsightArticle = {
   readingTime: number;
   language?: string;
   fullReport?: string;
+  fullReportLabel?: string;
   abstract: string;
   content: InsightBlock[];
 };

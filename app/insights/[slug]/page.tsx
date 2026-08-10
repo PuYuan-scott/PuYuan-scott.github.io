@@ -96,7 +96,8 @@ export default async function InsightPage({ params }: InsightPageProps) {
               target="_blank"
               rel="noreferrer"
             >
-              Full report PDF <span aria-hidden="true">↗</span>
+              {insight.fullReportLabel ?? "Full report PDF"}{" "}
+              <span aria-hidden="true">↗</span>
             </a>
           )}
           <Link className="text-link" href="/insights">

@@ -2,166 +2,269 @@ import type { InsightArticle } from "@/lib/insights";
 
 export const memoryCycleInsight: InsightArticle = {
   slug: "memory-stocks-stage-10-price-led-rollover",
-  title: "Memory Stocks Are Falling Before Earnings Estimates",
+  title: "Memory Cycle: Strong Earnings, Weaker Momentum",
   topic: "Memory Semiconductors",
   published: "2026-08-10",
   displayDate: "August 10, 2026",
-  readingTime: 5,
+  readingTime: 6,
   language: "en",
-  fullReport: "/reports/memory_cycle_at_an_inflection_point.pdf",
+  fullReport: "/reports/Memory%20Cycle%20research.pdf",
+  fullReportLabel:
+    "Detailed analysis: view the full Memory Cycle equity research report",
   abstract:
-    "Micron, SK hynix, and Samsung have entered Stage 10—Price-Led Roll-Over. Forward EBITDA estimates are still rising, but revision momentum has weakened sharply and stock prices have already turned lower.",
+    "Fundamentals remain strong in absolute terms, but Micron, SK hynix and Samsung Electronics are showing a late-cycle combination of positive earnings revisions, weaker revision momentum and negative stock returns.",
   content: [
     {
       type: "heading",
-      text: "The Signal",
+      text: "Investment View",
     },
     {
       type: "paragraph",
-      text: "The most important signal in the memory sector is no longer the level of earnings. It is the widening gap between still-rising forward EBITDA estimates and falling stock prices.",
+      text: "The memory sector appears to be moving out of a pure high-cycle expansion phase and into a more fragile late-cycle regime. Based on our proprietary cycle framework covering Micron, SK hynix and Samsung Electronics, all three names currently exhibit characteristics consistent with Stage 10—Price-Led Roll-over.",
     },
     {
       type: "paragraph",
-      text: "My Memory Cycle Tracker places Micron, SK hynix, and Samsung Electronics in Stage 10—Price-Led Roll-Over—as of August 6, 2026.",
-    },
-    {
-      type: "quote",
-      text: "Forward EBITDA revisions remain positive, revision momentum has turned negative, and the stock price has already declined.",
+      text: "This does not mean the earnings cycle has already peaked. Forward EBITDA expectations are still rising across the group. The more important change is that the speed of those upgrades has slowed sharply while stock prices have already weakened.",
     },
     {
       type: "paragraph",
-      text: "This does not mean that the earnings cycle has definitely peaked. It means the market has started questioning the durability of current earnings before analysts have formally cut their forecasts.",
+      text: "In other words, fundamentals remain strong in absolute terms, but the market has started to question how long that strength can persist.",
+    },
+    {
+      type: "paragraph",
+      text: "Our current stance is therefore neutral to cautious on the memory complex tactically, while remaining open to a renewed bullish view if earnings revisions re-accelerate.",
     },
     {
       type: "heading",
-      text: "The Current Reading",
-    },
-    {
-      type: "table",
-      headers: [
-        "Company",
-        "3M Stock Return",
-        "3M EBITDA Revision",
-        "3M Revision Acceleration",
-        "36M Peak Ratio",
-        "Stage",
-      ],
-      rows: [
-        ["Micron", "-9.2%", "+44.9%", "-59.8ppt", "100%", "Stage 10"],
-        ["SK hynix", "-35.9%", "+12.1%", "-76.9ppt", "82%", "Stage 10"],
-        [
-          "Samsung Electronics",
-          "-27.3%",
-          "+19.7%",
-          "-81.1ppt",
-          "100%",
-          "Stage 10",
-        ],
-      ],
+      text: "The Key Signal: Earnings Are Still Rising, but Momentum Is Fading",
     },
     {
       type: "paragraph",
-      text: "Consensus EBITDA is still moving higher over three months, but the rate of improvement has fallen sharply. At the same time, all three stocks have turned negative.",
+      text: "We track the memory cycle using three primary inputs: forward EBITDA revisions, the acceleration of those revisions, and three-month stock returns.",
     },
     {
       type: "paragraph",
-      text: "Price may be wrong, creating a temporary dislocation. But in cyclical industries, price often moves before consensus earnings. That makes the signal difficult to ignore.",
-    },
-    {
-      type: "heading",
-      text: "The Three Companies Are Not in the Same Position",
-    },
-    {
-      type: "paragraph",
-      text: "Micron still has the strongest revision profile. Its three-month EBITDA revision is +44.9%, and forward EBITDA remains at a 36-month high. The warning is almost entirely about deceleration: revision acceleration has fallen to -59.8 percentage points while the stock has started to decline.",
-    },
-    {
-      type: "paragraph",
-      text: "SK hynix shows the most advanced deterioration. Its stock is down 35.9% over three months, its latest one-month EBITDA revision has turned negative, and forward EBITDA has fallen to 82% of its 36-month peak. It is the closest of the three companies to a formal earnings roll-over.",
-    },
-    {
-      type: "paragraph",
-      text: "Samsung Electronics remains at its forward EBITDA peak and still has positive revisions, but its stock has fallen 27.3% and three-month acceleration has dropped to -81.1 percentage points. Its diversified business mix may provide some defense, though it also makes EBITDA a less precise pure-memory signal.",
-    },
-    {
-      type: "heading",
-      text: "Why Low Multiples Can Be Misleading",
-    },
-    {
-      type: "paragraph",
-      text: "Micron, SK hynix, and Samsung trade at approximately 4.7x, 2.6x, and 2.2x NTM EV/EBITDA in the tracker. Those multiples look inexpensive, but low forward multiples often appear when the EBITDA denominator is close to a cyclical peak.",
-    },
-    {
-      type: "paragraph",
-      text: "If forward EBITDA falls, the multiple can rise even while the stock price declines. The relevant question is not simply whether the multiple is low, but whether earnings revisions are still accelerating enough to sustain the denominator.",
-    },
-    {
-      type: "quote",
-      text: "Right now, revisions remain positive—but acceleration does not.",
-    },
-    {
-      type: "heading",
-      text: "Stage 10 Is a Fork, Not a Final Verdict",
+      text: "The most important relationship is:",
     },
     {
       type: "framework",
       items: [
-        "Bearish path: Stage 10 → Earnings Peak → Downturn Confirmation",
-        "Bullish path: Stage 10 → Transition → Recovery or Earnings Acceleration",
+        "EBITDA Revision > 0",
+        "Revision Acceleration < 0",
+        "Stock Return < 0",
       ],
     },
     {
       type: "paragraph",
-      text: "Micron in 2018 and SK hynix in 2018 and 2022 followed versions of the bearish sequence. Price weakness correctly anticipated later earnings deterioration.",
+      text: "That is the pattern currently visible across the major memory names.",
     },
     {
       type: "paragraph",
-      text: "Micron in 2020 and several 2021 episodes show the other path: a price-led roll-over can be a temporary mid-cycle correction. Stage 10 should therefore be treated as a warning that requires confirmation, not as an automatic sell signal.",
-    },
-    {
-      type: "heading",
-      text: "What I Am Watching Next",
-    },
-    {
-      type: "list",
-      items: [
-        "Whether three-month EBITDA revisions remain positive or move toward zero.",
-        "Whether three-month revision acceleration recovers from deeply negative levels.",
-        "Whether stock prices stabilize before consensus estimates turn down.",
-        "Whether forward multiples begin rising because the EBITDA denominator is falling.",
-      ],
+      text: "For Micron, forward EBITDA expectations remain substantially above where they were three months ago, yet revision acceleration has turned sharply negative and the stock's three-month return has moved below zero.",
     },
     {
       type: "paragraph",
-      text: "The strongest bull signal would be positive revisions, positive acceleration, and positive stock returns. The clearest bear signal would be revisions turning negative while acceleration and stock returns remain negative.",
-    },
-    {
-      type: "heading",
-      text: "Final View",
+      text: "SK hynix shows an even clearer cooling signal, with forward earnings still being revised upward but at a much slower pace than before, while its share price has already corrected materially.",
     },
     {
       type: "paragraph",
-      text: "The memory sector is no longer in a clean high-cycle expansion. It has entered a late-cycle phase in which price has begun to roll over before earnings estimates.",
+      text: "Samsung shows a similar directional pattern, although its broader business mix makes it a less pure memory-cycle proxy.",
+    },
+    {
+      type: "paragraph",
+      text: "The key distinction is therefore between earnings level and earnings momentum.",
     },
     {
       type: "quote",
-      text: "My current stance is Neutral to Cautious.",
+      text: "The earnings level remains high. The earnings momentum is weakening.",
     },
     {
       type: "paragraph",
-      text: "I would not aggressively chase pure memory-cycle exposure simply because forward multiples look low. Existing holders should focus on revision momentum, while new capital should wait for either genuine re-acceleration or a deeper reset followed by trough formation.",
-    },
-    {
-      type: "paragraph",
-      text: "The central question is not whether earnings are still strong today. They are. The question is whether the collapse in revision acceleration is a temporary pause—or the first signal that the memory earnings peak is approaching.",
+      text: "For cyclical equities, the second variable often matters more near turning points.",
     },
     {
       type: "heading",
-      text: "Methodology Note",
+      text: "Why Low EV/EBITDA Is Not Automatically Bullish",
     },
     {
       type: "paragraph",
-      text: "Source: Scott Yuan Memory Cycle Tracker, data through August 6, 2026. Historical EV/EBITDA and NTM EBITDA series are approximate monthly values digitized from Koyfin charts and are intended for cycle analysis rather than precise trading signals.",
+      text: "Current memory valuations may look inexpensive on conventional forward multiples. However, this is exactly where cyclical valuation becomes counterintuitive.",
+    },
+    {
+      type: "paragraph",
+      text: "For a memory producer:",
+    },
+    {
+      type: "framework",
+      items: ["EV/EBITDA = Enterprise Value ÷ Forward EBITDA"],
+    },
+    {
+      type: "paragraph",
+      text: "At or near peak profitability, forward EBITDA can rise faster than enterprise value, causing EV/EBITDA to fall sharply.",
+    },
+    {
+      type: "paragraph",
+      text: "As a result, the lowest valuation multiple can occur close to the strongest point in the earnings cycle.",
+    },
+    {
+      type: "paragraph",
+      text: "This means a stock can simultaneously appear statistically cheap and still carry elevated downside risk if future earnings expectations are close to peaking.",
+    },
+    {
+      type: "paragraph",
+      text: "For this reason, we do not use EV/EBITDA in isolation. We combine it with a 36-month EBITDA peak ratio, historical valuation percentile and the direction of earnings revisions.",
+    },
+    {
+      type: "paragraph",
+      text: "The current combination of elevated forward earnings, relatively low multiples and decelerating revision momentum is more consistent with a mature cycle than an early recovery.",
+    },
+    {
+      type: "heading",
+      text: "What History Says About This Stage",
+    },
+    {
+      type: "paragraph",
+      text: "The important historical lesson is that a Price-Led Roll-over is not the same thing as a confirmed cycle peak.",
+    },
+    {
+      type: "paragraph",
+      text: "Historically, there have been two very different outcomes following similar conditions.",
+    },
+    {
+      type: "paragraph",
+      text: "In the bearish path, the stock declines first, revision momentum continues deteriorating, forward EBITDA revisions eventually turn negative, and the industry transitions into a conventional downcycle:",
+    },
+    {
+      type: "framework",
+      items: ["Price Roll-over → Earnings Peak → Downturn"],
+    },
+    {
+      type: "paragraph",
+      text: "This resembles the classic memory-cycle pattern in which equity prices lead analyst estimates by several months.",
+    },
+    {
+      type: "paragraph",
+      text: "But there is also a second path.",
+    },
+    {
+      type: "paragraph",
+      text: "At several points in prior cycles, stocks weakened while forward earnings were still rising, only for demand and pricing conditions to strengthen again. Revision acceleration subsequently turned positive and the stocks resumed their upward trend.",
+    },
+    {
+      type: "paragraph",
+      text: "The path in that case becomes:",
+    },
+    {
+      type: "framework",
+      items: ["Price Roll-over → Temporary Pause → Re-acceleration → New High"],
+    },
+    {
+      type: "paragraph",
+      text: "This is why we view the current environment as an inflection point rather than a confirmed top.",
+    },
+    {
+      type: "heading",
+      text: "What Determines the Next Phase",
+    },
+    {
+      type: "paragraph",
+      text: "The next one to three months are likely to be more informative than the absolute level of current earnings.",
+    },
+    {
+      type: "paragraph",
+      text: "The most important variable is revision acceleration.",
+    },
+    {
+      type: "paragraph",
+      text: "If revision acceleration improves from negative back toward zero and eventually positive territory, while forward EBITDA revisions remain positive, the current weakness would increasingly resemble a mid-cycle correction.",
+    },
+    {
+      type: "paragraph",
+      text: "If stock returns also recover, the cycle could move back toward:",
+    },
+    {
+      type: "framework",
+      items: ["Earnings Acceleration → High-Cycle Expansion"],
+    },
+    {
+      type: "paragraph",
+      text: "That would justify rebuilding exposure, particularly in higher-beta memory names such as Micron and SK hynix.",
+    },
+    {
+      type: "paragraph",
+      text: "The alternative is more concerning.",
+    },
+    {
+      type: "paragraph",
+      text: "If forward EBITDA revisions continue slowing and eventually move below zero, while stocks remain weak, the current Stage 10 signal would progress toward Earnings Peak / Roll-over and ultimately Downturn Confirmation.",
+    },
+    {
+      type: "paragraph",
+      text: "That would suggest the market was correct to lead earnings lower.",
+    },
+    {
+      type: "heading",
+      text: "Investment Implications",
+    },
+    {
+      type: "paragraph",
+      text: "At this point in the cycle, we would not treat low valuation multiples as sufficient reason to aggressively add exposure.",
+    },
+    {
+      type: "paragraph",
+      text: "The risk/reward is less attractive than it was during the early recovery and earnings-acceleration stages because the market is no longer simply rewarding higher earnings estimates. It is now questioning their durability.",
+    },
+    {
+      type: "paragraph",
+      text: "For existing positions, the appropriate approach is therefore more selective than outright bearish.",
+    },
+    {
+      type: "paragraph",
+      text: "If share prices rebound but revision acceleration remains negative, we would view the rally cautiously because the fundamental momentum has not yet confirmed the move.",
+    },
+    {
+      type: "paragraph",
+      text: "If revision acceleration turns positive again and stock performance stabilizes, the probability of a renewed high-cycle expansion would increase materially.",
+    },
+    {
+      type: "paragraph",
+      text: "Conversely, if forward EBITDA revisions turn negative, we would treat that as a much stronger confirmation that the industry has moved beyond a temporary correction and into a genuine earnings downturn.",
+    },
+    {
+      type: "heading",
+      text: "Bottom Line",
+    },
+    {
+      type: "paragraph",
+      text: "The memory industry is no longer in a clean early- or mid-cycle expansion.",
+    },
+    {
+      type: "paragraph",
+      text: "Our framework currently identifies the sector as:",
+    },
+    {
+      type: "quote",
+      text: "Late Cycle / Price-Led Roll-over",
+    },
+    {
+      type: "paragraph",
+      text: "The important message is not that earnings are weak—they are not.",
+    },
+    {
+      type: "quote",
+      text: "Earnings expectations remain strong, but the rate of improvement has deteriorated and equity prices have already started to respond.",
+    },
+    {
+      type: "paragraph",
+      text: "That combination historically represents a decision point.",
+    },
+    {
+      type: "paragraph",
+      text: "A recovery in revision acceleration would support another leg of the memory upcycle. Continued deceleration followed by negative earnings revisions would instead confirm that the current profit peak is becoming a true cycle peak.",
+    },
+    {
+      type: "paragraph",
+      text: "For now, the preferred strategy is therefore to wait for confirmation rather than chase apparently cheap multiples.",
     },
   ],
 };

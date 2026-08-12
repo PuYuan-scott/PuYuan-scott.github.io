@@ -1,9 +1,9 @@
 ---
-title: "Mega-Cap Technology Drawdown and Accumulation Framework"
-subtitle: "A Business-Fundamentals and Historical-Risk Study of Long-Term Returns, Drawdown Frequency, Recovery Characteristics, and Staged Buying Strategies"
-author: "Scott Yuan Research"
-date: "August 12, 2026"
-subject: "Equity research on mega-cap technology fundamentals, historical drawdowns and accumulation strategies"
+title: Mega-Cap Technology Drawdown and Accumulation Framework
+subtitle: A Business-Fundamentals and Historical-Risk Study of Long-Term Returns, Drawdown Frequency, Recovery Characteristics, and Staged Buying Strategies
+author: Scott Yuan Research
+date: August 12, 2026
+subject: Equity research on mega-cap technology fundamentals, historical drawdowns and accumulation strategies
 keywords:
   - mega-cap technology
   - business fundamentals
@@ -36,6 +36,8 @@ The latest financial reports show that these companies are less economically sim
 The historical return analysis also shows very different investment paths. NVIDIA, Tesla, and Broadcom generated the highest historical CAGRs, but NVIDIA and Tesla required far greater tolerance for volatility. Microsoft produced the lowest CAGR in the high-quality group, but it also produced the shallowest typical annual drawdown, the lowest downside volatility, and one of the shortest median recoveries. Broadcom delivered the strongest historical return relative to its median annual drawdown. Tesla delivered exceptional long-term appreciation but the most difficult holding experience: the deepest median annual drawdown, the highest total and downside volatility, the worst short-term losses, and the longest median recovery.
 
 The drawdown-frequency analysis is the bridge between statistics and action. A 20% Microsoft drawdown occurred in only 25% of observed calendar years. A 20% NVIDIA or Broadcom drawdown occurred in 68.8% of years. Every complete Tesla year in the sample contained at least a 20% drawdown. Therefore, a universal “buy every stock after it falls 20%” rule would systematically deploy capital too early in the highest-beta names.
+
+The report also separates ordinary recovery behavior from recovery following major drawdowns. This distinction materially changes the interpretation of several stocks. Meta’s 78-day unconditional median recovery appears fast, but its median full underwater period rises to 303 trading days after a drawdown of at least 30% and 367 days after a drawdown of at least 40%. Tesla’s median 40% drawdown cycle is even longer at 567 trading days, although its post-trough rebound is typically faster than Meta’s. Amazon, TSMC, and Alphabet also show that a rare 40% drawdown can require more than two years to recover even when the long-term thesis ultimately survives.
 
 The resulting portfolio framework is:
 
@@ -99,6 +101,13 @@ The framework therefore applies drawdown statistics only after evaluating:
 **Typical Worst 1M and 3M** are the median, across calendar years, of each year’s worst rolling one-month and three-month return. They approximate the short-term loss an investor could experience after buying near a local high.
 
 **Median Recovery** is the median number of trading days from a prior peak until the adjusted price regains that peak. It measures the duration of the complete underwater period, not merely the time from trough to recovery.
+
+**Conditional Deep-Drawdown Recovery** measures recovery only for independent drawdown events whose trough reached at least 30% or 40% below the preceding peak. An independent event begins at a prior high, continues through the trough, and ends on the first trading day when the adjusted price regains that high. Two durations are reported:
+
+- **Peak-to-Recovery:** the complete underwater period from the prior peak through the decline and subsequent recovery.
+- **Trough-to-Recovery:** the rebound period from the lowest adjusted close to the first recovery of the prior peak.
+
+This conditional measure prevents numerous small, rapidly recovered corrections from obscuring the holding difficulty of a true valuation reset or business-cycle drawdown.
 
 **Historical Drawdown Recurrence** converts the number of qualifying calendar years into an intuitive interval:
 
@@ -454,6 +463,124 @@ These values are historical sample frequencies, not forward-looking probabilitie
 
 ---
 
+# Recovery Conditional on Drawdown Severity
+
+## Why Conditional Recovery Matters
+
+The unconditional recovery figures in Section 3 combine ordinary corrections with major drawdowns. That is useful for describing the typical holding experience, but it can materially understate the recovery time following a severe valuation reset.
+
+Meta illustrates the problem. Its unconditional median recovery is only 78 trading days because many ordinary corrections recovered quickly. Once the sample is restricted to independent drawdowns of at least 30%, its median peak-to-recovery period rises to 303 trading days. At the 40% threshold, it rises to 367 trading days.
+
+The conditional analysis therefore asks a more relevant accumulation question:
+
+> If an investor adds capital after the stock has already entered a major 30% or 40% drawdown, how long has the stock historically taken to regain its previous peak?
+
+An independent event begins at the preceding adjusted-price high and ends only when that exact high is recovered. Each event is counted once, regardless of how many calendar years it spans. The table reports medians across completed qualifying events.
+
+## Deep-Drawdown Recovery Summary
+
+| Company | Events at least 30% | Median Peak-to-Recovery | Median Trough-to-Recovery | Events at least 40% | Median Peak-to-Recovery | Median Trough-to-Recovery |
+|---|---:|---:|---:|---:|---:|---:|
+| NVDA | 6 | 299 days | 128 days | 4 | 360 days | 220 days |
+| TSLA | 10 | 196 days | 130 days | 5 | 567 days | 174 days |
+| AVGO | 4 | 148 days | 111 days | 2 | 106 days | 57 days |
+| META | 5 | 303 days | 229 days | 3 | 367 days | 262 days |
+| AAPL | 6 | 306 days | 158 days | 1 | 454 days | 310 days |
+| TSM | 2 | 320 days | 193 days | 1 | 534 days | 332 days |
+| AMZN | 4 | 272 days | 207 days | 1 | 694 days | 322 days |
+| MSFT | 1 | 393 days | 153 days | 0 | Not observed | Not observed |
+| GOOGL | 3 | 214 days | 88 days | 1 | 547 days | 306 days |
+
+All durations are trading days. Peak-to-Recovery measures the complete underwater period. Trough-to-Recovery measures only the rebound after the lowest adjusted close has occurred.
+
+## NVIDIA — Frequent Deep Drawdowns, Highly Variable Recoveries
+
+NVIDIA recorded six independent drawdowns of at least 30%, four of which exceeded 40%. The median complete recovery period was 299 trading days after a 30% drawdown and approximately 360 days after a 40% drawdown. From the trough, the corresponding median recovery periods were 128 and 220 days.
+
+The central feature is not simply a fast or slow recovery; it is extreme dispersion. The 2020 decline of approximately 38% recovered its prior peak in only 57 trading days. By contrast, the drawdown beginning in 2011 required 1,161 trading days to recover. The 2018 semiconductor correction and 2021–2022 AI and technology reset fell between those extremes.
+
+This variation reflects NVIDIA’s exposure to two different types of decline. Liquidity shocks inside a strong secular demand cycle can reverse quickly. Semiconductor inventory corrections, product cycles, or changes in data-center capital spending can keep the stock underwater for years. A 40% drawdown is therefore statistically attractive, but the expected recovery period depends more on the AI infrastructure cycle than on the percentage decline alone.
+
+## Tesla — Long Decline Phases and Uneven Recovery Paths
+
+Tesla recorded ten independent 30% drawdowns and five 40% drawdowns, the highest event count in the sample. Its median 30% peak-to-recovery period was relatively short at 196 trading days. Once the decline exceeded 40%, however, the median complete underwater period increased sharply to 567 trading days.
+
+Tesla’s 40% peak-to-recovery period was longer than Meta’s, but its median trough-to-recovery period was shorter: 174 trading days versus Meta’s 262. This suggests that Tesla often spends a long time declining or consolidating before the final trough, but can rebound rapidly once market expectations turn.
+
+The 2021–2024 event demonstrates the tail risk. Tesla declined approximately 73.6% and required 779 trading days, or 1,133 calendar days, to regain its previous high. The rebound from the January 2023 trough alone required 488 trading days. Tesla should therefore not be described as uniformly fast-recovering. Its recovery distribution contains both sharp V-shaped rebounds and multi-year underwater periods.
+
+## Broadcom — Historically Fast Recovery, but a Small Tail Sample
+
+Broadcom recorded four 30% drawdowns and two 40% drawdowns. The median complete recovery periods were 148 and 106 trading days respectively, the fastest results in the group.
+
+The apparently faster recovery at the 40% threshold is a sample-composition effect. Broadcom’s two 40% events were rapid market shocks: the 2020 pandemic decline and the 2025 correction. Both recovered quickly. Its less severe 2022 drawdown of approximately 35% required 349 trading days to recover, raising the 30% group median.
+
+Broadcom’s history is therefore best characterized as frequent corrections with relatively few prolonged severe extensions. Nevertheless, only two 40% events are available. Investors should not assume that a future decline caused by lost hyperscaler programs, weaker custom-silicon demand, or VMware deterioration will recover as quickly as a macro-driven shock.
+
+## Meta — Fast Ordinary Recoveries, Slow Tail Recoveries
+
+Meta recorded five 30% drawdowns and three 40% drawdowns. Its median complete recovery period increased from 303 trading days at the 30% threshold to 367 days at 40%. From the trough, Meta required 229 and 262 trading days respectively.
+
+This result materially changes the interpretation of Meta’s 78-day unconditional median recovery. The short unconditional figure describes normal corrections, not major valuation resets. Meta’s severe declines have historically occurred when investors questioned engagement, platform relevance, advertising economics, capital allocation, or a technology transition.
+
+The 2021–2024 event produced a 76.7% drawdown. It required 595 trading days, or 864 calendar days, to recover the September 2021 peak. Meta therefore has moderate normal-year risk but materially slower recovery once a correction develops into a 30%–40% thesis-driven repricing.
+
+## Apple — Rare Extreme Drawdowns Can Still Require Long Recoveries
+
+Apple recorded six 30% drawdowns but only one event beyond 40%. The median complete recovery following a 30% drawdown was 306 trading days, and the median rebound from the trough was 158 days.
+
+The single 40% event began in 2012, when the market questioned iPhone growth, margins, and Apple’s post-Steve Jobs innovation trajectory. The stock declined approximately 43.8% and required 454 trading days to regain its previous peak, including 310 trading days after the trough.
+
+Apple’s deep drawdowns have therefore not necessarily produced immediate V-shaped recoveries. A 30% decline remains a historically important accumulation signal, but an investor should be prepared for approximately a year or more underwater even when the ecosystem and cash-generation thesis ultimately remains intact.
+
+## TSMC — Cycle-Dependent Recoveries Require Patience
+
+TSMC recorded only two 30% drawdowns and one 40% drawdown. The median 30% peak-to-recovery period was 320 trading days. Its 2022 decline exceeded 56% and required 534 trading days to recover, including 332 trading days from the trough.
+
+TSMC’s recovery is constrained by the duration of semiconductor demand and utilization cycles. Customer inventory, wafer demand, advanced-node utilization, capital expenditure, and geopolitical risk premiums can take several quarters to normalize. Even if a 30%–40% entry proves fundamentally correct, the position may remain underwater for roughly two years during a full industry reset.
+
+The small event count also makes the median less statistically stable. TSMC’s threshold should therefore be used as a trigger for cycle analysis, not as an automatic timing signal.
+
+## Amazon — Severe Drawdowns Can Produce the Longest Recovery
+
+Amazon recorded four 30% drawdowns and one 40% drawdown. Its median complete recovery after a 30% decline was 272 trading days, with 207 days required after the trough.
+
+The sole 40% event was the 2021–2024 reset. Amazon declined approximately 56.1% and required 694 trading days, or 1,008 calendar days, to recover. This was the longest 40% peak-to-recovery result in the company comparison, although it is based on one event.
+
+Amazon’s severe declines can combine AWS deceleration, retail overcapacity, margin compression, capital expenditure, and deteriorating free cash flow. A 40% decline may create an attractive long-term valuation, but it should not be expected to recover quickly. The investor may need to tolerate nearly three calendar years below the previous peak.
+
+## Microsoft — Rare Does Not Mean Immediately Recoverable
+
+Microsoft recorded only one independent 30% drawdown and no 40% drawdown. Its 2021–2023 event reached approximately 37.1% and required 393 trading days to regain the prior peak. The decline took 240 trading days to reach its trough, followed by a 153-day rebound.
+
+This distinction is important. Microsoft’s 30% drawdown was rare, but rarity did not make the recovery immediate. Valuation compression, rising discount rates, and slower cloud expectations can keep a fundamentally strong company underwater for an extended period.
+
+A 30% Microsoft decline remains a historically important accumulation opportunity. However, an investor should still be prepared for approximately one and a half years between the original peak and full recovery.
+
+## Alphabet — Fast Recovery at 30%, Much Slower at 40%
+
+Alphabet recorded three 30% drawdowns and one 40% drawdown. Its median complete recovery at the 30% threshold was relatively fast at 214 trading days, while the median trough-to-recovery period was only 88 days.
+
+The 40% result was materially different. The 2021–2024 drawdown reached approximately 44.3% and required 547 trading days to recover, including 306 days after the trough.
+
+This suggests that ordinary 30% Alphabet corrections can reverse relatively quickly, but a decline that moves beyond 40% is more likely to reflect a structural debate about Search, generative AI, advertising, Cloud profitability, or regulation. The deeper threshold therefore requires explicit confirmation that AI is not permanently impairing Search economics.
+
+## Cross-Company Recovery Interpretation
+
+At the 30% threshold, Broadcom had the fastest median complete recovery, followed by Tesla and Alphabet. Microsoft had the slowest result, although it had only one qualifying event. Meta, Apple, NVIDIA, and TSMC clustered around approximately 300–320 trading days.
+
+At the 40% threshold, Broadcom remained fastest, followed by NVIDIA and Meta. Apple required 454 days; TSMC, Alphabet, and Tesla required approximately 534–567 days; and Amazon required 694 days. Microsoft had no qualifying event.
+
+The ranking should not be interpreted without the event count. Several 40% medians are based on only one observation. The more robust portfolio conclusion is that recovery risk has three forms:
+
+- **Fast but highly variable:** Broadcom, NVIDIA, and Tesla. Market shocks can reverse rapidly, while cycle or thesis events can persist for years.
+- **Moderate normal recovery but slow tail recovery:** Meta, Apple, and Alphabet.
+- **Structurally slower deep-cycle recovery:** TSMC and Amazon. Microsoft’s only major event was also prolonged despite the company’s defensive business quality.
+
+The conditional analysis changes the accumulation framework. A rare drawdown may improve expected return, but it also increases the expected period during which capital remains unavailable or psychologically difficult to hold. Position size and dry powder should therefore reflect both drawdown probability and recovery duration.
+
+---
+
 # Integrated Stock-by-Stock Investment Strategy
 
 ## Microsoft — Core DCA Compounder
@@ -462,7 +589,9 @@ Microsoft combines the group’s most balanced business mix with the lowest down
 
 Historically, Microsoft produced a 21.0% CAGR, 16.0% median annual drawdown, 16.7% downside volatility, and an 80.5-day median recovery. A 20% drawdown occurred in only 25% of years, while 30% occurred once in the 16-year sample.
 
-**Strategy:** maintain full continuous DCA. Treat approximately 15% as normal-to-moderate volatility, 20% as the first major acceleration zone, and 30% as a rare major accumulation zone. At 20%, consider approximately 2x the normal contribution. At 30%, approximately 3x can be justified if Azure demand, Microsoft 365 retention, Copilot monetization, cloud margins, and free-cash-flow returns on AI CapEx remain intact.
+The only independent 30% event required 393 trading days to recover the prior peak, including 153 days after the trough. A rare Microsoft decline can therefore offer an unusually attractive entry while still requiring approximately one and a half years of patience.
+
+**Strategy:** maintain full continuous DCA. Treat approximately 15% as normal-to-moderate volatility, 20% as the first major acceleration zone, and 30% as a rare major accumulation zone. At 20%, consider approximately 2x the normal contribution. At 30%, approximately 3x can be justified if Azure demand, Microsoft 365 retention, Copilot monetization, cloud margins, and free-cash-flow returns on AI CapEx remain intact. Deploy the 30% allocation in stages rather than assuming that rarity guarantees an immediate rebound.
 
 ## Alphabet — Core DCA with Search-Thesis Validation
 
@@ -470,7 +599,9 @@ Alphabet’s Search business still contributes 52.8% of revenue and grew 16.8%, 
 
 Historically, Alphabet produced a 20.7% CAGR, 19.1% median annual drawdown, 18.4% downside volatility, and a 121.5-day median recovery. A 20% drawdown occurred in 43.7% of years; 30% in 18.8%; and 40% in 6.3%.
 
-**Strategy:** maintain continuous DCA. Increase to approximately 1.5x near 20% and 2.5x near 30%. A 40% decline may justify approximately 3x only after verifying query growth, AI Search monetization, Google Cloud growth and margin, YouTube, CapEx, and free cash flow. A deep decline specifically caused by structural Search impairment is not automatically an opportunity.
+Independent 30% events recovered in a median of 214 trading days, including only 88 days after the trough. The single 40% event was different: it required 547 trading days to recover, including 306 days after the trough. Recovery risk therefore rises nonlinearly when the decline moves from an ordinary large correction into a structural Search or AI debate.
+
+**Strategy:** maintain continuous DCA. Increase to approximately 1.5x near 20% and 2.5x near 30%. A 40% decline may justify approximately 3x only after verifying query growth, AI Search monetization, Google Cloud growth and margin, YouTube, CapEx, and free cash flow. Spread the 40% allocation across multiple reviews because the historical recovery period exceeded two years. A deep decline specifically caused by structural Search impairment is not automatically an opportunity.
 
 ## Apple — Core Quality Compounder
 
@@ -478,7 +609,9 @@ Apple’s iPhone still contributes 49.6% of revenue, while Services contributes 
 
 Historically, Apple produced a 26.5% CAGR, 18.8% median annual drawdown, 19.0% downside volatility, and a 100.5-day median recovery. A 20% decline occurred in 43.7% of years and 30% in 25%; 40% was not observed.
 
-**Strategy:** continuous DCA. Increase to approximately 1.5x around 20% and 2.5x around 30% if installed-base engagement, Services growth, product gross margins, and cash generation remain intact. A decline approaching 40% lies outside this annual sample and should trigger a full thesis and valuation review rather than automatic buying.
+Conditional recovery was much slower than the unconditional figure. Apple’s six 30% events required a median of 306 trading days to recover. Its single 40% event required 454 days, including 310 days after the trough.
+
+**Strategy:** continuous DCA. Increase to approximately 1.5x around 20% and 2.5x around 30% if installed-base engagement, Services growth, product gross margins, and cash generation remain intact. Stage the 30% purchases with the expectation that a correct thesis may still take approximately a year or more to be reflected in price. A decline approaching 40% should trigger a full thesis and valuation review rather than automatic buying.
 
 ## Broadcom — High-Return Opportunistic Compounder
 
@@ -486,7 +619,9 @@ Broadcom’s semiconductor business contributes 67.6% of revenue and grew 79%. A
 
 Historically, Broadcom produced a 41.9% CAGR, 93.8% positive years, a 22.9% median annual drawdown, and an 89.5-day recovery. A 20% decline was frequent at 68.8%, but 30% fell to 25% and 40% to 12.5%.
 
-**Strategy:** maintain a 0.75x–1x baseline contribution and reserve 20%–30% of planned capital as dry powder. A 20% correction deserves only a modest increase to roughly 1.25x. Approximately 30% is the first major add zone at roughly 2x. Approximately 40% can justify 3x staged deployment after validating AI accelerator wins, networking demand, customer concentration, VMware retention, leverage, and free cash flow.
+Broadcom’s four 30% events recovered in a median of 148 trading days. Its two 40% events recovered in only 106 days, but both were rapid market shocks rather than proven examples of structural business impairment. The small tail sample argues against assuming that every future 40% drawdown will recover equally quickly.
+
+**Strategy:** maintain a 0.75x–1x baseline contribution and reserve 20%–30% of planned capital as dry powder. A 20% correction deserves only a modest increase to roughly 1.25x. Approximately 30% is the first major add zone at roughly 2x. Approximately 40% can justify 3x staged deployment after validating AI accelerator wins, networking demand, customer concentration, VMware retention, leverage, and free cash flow. The historically fast recovery supports decisive buying only when the decline remains macro- or cycle-driven rather than customer-loss-driven.
 
 ## Meta — Advertising Compounder with Tail-Risk Discipline
 
@@ -494,7 +629,9 @@ Meta receives 97.6% of revenue from advertising. AI is currently most valuable w
 
 Historically, Meta produced a 28.1% CAGR, 19.7% median annual drawdown, and the fastest 78-day median recovery. However, 30% and 40% drawdowns occurred in 30.8% and 15.4% of years, revealing heavier tail risk than the median suggests.
 
-**Strategy:** maintain a 0.75x–1x baseline. Increase to approximately 1.5x near 20% and 2x near 30%. At 40%, 2.5x–3x is appropriate only after mandatory review of engagement, ad impressions, ad pricing, advertiser ROI, Reality Labs losses, CapEx, operating margin, and free cash flow. At 50% or deeper, suspend mechanical averaging and rebuild the thesis.
+The conditional results overturn the impression created by the 78-day figure. Meta required a median of 303 trading days to recover after a 30% drawdown and 367 days after a 40% drawdown. From the trough, the 40% events still required 262 trading days. Meta’s normal corrections recover quickly, but its thesis-driven valuation resets do not.
+
+**Strategy:** maintain a 0.75x–1x baseline. Increase to approximately 1.5x near 20% and 2x near 30%, but spread the 30% allocation because the historical full recovery period was approximately 303 trading days. At 40%, 2.5x–3x is appropriate only after mandatory review of engagement, ad impressions, ad pricing, advertiser ROI, Reality Labs losses, CapEx, operating margin, and free cash flow. Expect approximately one and a half years for a typical full 40% recovery. At 50% or deeper, suspend mechanical averaging and rebuild the thesis.
 
 ## Amazon — AWS-Led Opportunistic Compounder
 
@@ -502,7 +639,9 @@ Retail generates most revenue, but AWS generates approximately 60% of operating 
 
 Historically, Amazon produced a 24.7% CAGR, 21.2% median annual drawdown, 21.2% downside volatility, and a 107-day median recovery. A 20% drawdown occurred in half of years, 30% in 18.8%, and 40% in 6.3%.
 
-**Strategy:** maintain 0.75x–1x continuous exposure. Increase to approximately 1.5x near 20%, 2.5x near 30%, and potentially 3x near 40%. Before major deployment, verify AWS growth, AWS margins, AI revenue, advertising growth, retail margin, international profitability, CapEx, and free-cash-flow conversion.
+Amazon’s 30% events required a median of 272 trading days to recover. Its single 40% event required 694 trading days, or 1,008 calendar days, the longest 40% recovery in this comparison. Severe Amazon drawdowns can therefore remain unresolved while AWS, retail capacity, margins, CapEx, and free cash flow normalize.
+
+**Strategy:** maintain 0.75x–1x continuous exposure. Increase to approximately 1.5x near 20% and 2.5x near 30%. A potential 3x allocation at 40% should be deployed over multiple fundamental checkpoints rather than immediately, because the historical severe event remained underwater for nearly three calendar years. Before major deployment, verify AWS growth, AWS margins, AI revenue, advertising growth, retail margin, international profitability, CapEx, and free-cash-flow conversion.
 
 ## TSMC — Cyclical Compounder
 
@@ -510,7 +649,9 @@ HPC now represents 66% of revenue and smartphones only 22%. Advanced processes g
 
 Historically, TSMC produced a 26.4% CAGR with Apple-like downside volatility of 19.0%, but its median recovery was longer at 130.5 days. A 20% decline occurred in 50% of years, while 30% occurred in only 12.5%.
 
-**Strategy:** use a lighter 0.5x–0.75x base DCA. Approximately 20% is an initial add zone at 1.5x, but it remains normal for the stock. Approximately 30% is historically much more significant and can justify 2.5x–3x after reviewing HPC demand, node utilization, N2 execution, advanced packaging, gross margins, CapEx, customer concentration, and geopolitics. At 40%, conduct a full cycle and geopolitical review.
+Its two 30% events required a median of 320 trading days to recover. The single 40% event required 534 days, including 332 days after the trough. These durations are consistent with a manufacturing cycle that can require several quarters for inventories, utilization, and customer demand to normalize.
+
+**Strategy:** use a lighter 0.5x–0.75x base DCA. Approximately 20% is an initial add zone at 1.5x, but it remains normal for the stock. Approximately 30% is historically much more significant and can justify 2.5x–3x after reviewing HPC demand, node utilization, N2 execution, advanced packaging, gross margins, CapEx, customer concentration, and geopolitics. Deploy the larger allocation across cycle milestones and prepare for a one- to two-year recovery. At 40%, conduct a full cycle and geopolitical review.
 
 ## NVIDIA — High-Beta AI Compounder
 
@@ -518,7 +659,9 @@ NVIDIA receives 92.1% of revenue from Data Center, with extraordinary growth in 
 
 Historically, NVIDIA produced the highest CAGR at 46.2%, but its median annual drawdown was 28.7% and downside volatility was 27.9%. A 20% decline occurred in 68.8% of years, 30% in 50%, and 40% in 25%.
 
-**Strategy:** maintain a smaller 0.5x–0.75x base contribution. Do not deploy major dry powder at 20%; it is normal. Approximately 30% is the first meaningful accumulation zone at 1.5x–2x. Approximately 40% is the major zone at 2.5x–3x if hyperscaler CapEx, GPU demand and utilization, CUDA, networking, HBM supply, competitive position, and gross margins remain intact. At 50%, conduct a full cycle review before continuing.
+NVIDIA’s six 30% events required a median of 299 trading days to recover; four 40% events required approximately 360 days. The longest completed recovery lasted 1,161 trading days, demonstrating that a semiconductor-cycle drawdown can be fundamentally different from a short liquidity shock.
+
+**Strategy:** maintain a smaller 0.5x–0.75x base contribution. Do not deploy major dry powder at 20%; it is normal. Approximately 30% is the first meaningful accumulation zone at 1.5x–2x. Approximately 40% is the major zone at 2.5x–3x if hyperscaler CapEx, GPU demand and utilization, CUDA, networking, HBM supply, competitive position, and gross margins remain intact. Stage purchases because recovery can range from several months to more than four years depending on the cycle. At 50%, conduct a full cycle review before continuing.
 
 ## Tesla — High-Beta Optionality Asset
 
@@ -526,7 +669,9 @@ Approximately 72.7% of Tesla’s latest revenue remains automotive. Energy contr
 
 Historically, Tesla produced a 44.6% CAGR but also a 35.7% median annual drawdown, 36.5% downside volatility, a -27.0% typical worst one-month result, and a 204-day median recovery. Every observed year contained a 20% drawdown, 80% contained 30%, and one third contained 40%.
 
-**Strategy:** maintain only a 0x–0.5x base contribution. Do not add incrementally merely because the stock falls 20%. A 30% decline still supports only normal or modest deployment. Approximately 40% is the first meaningful zone at 1.5x–2x. Approximately 50% may justify 2.5x after reviewing deliveries, automotive gross margin, pricing, FSD adoption and economics, Robotaxi regulation, Energy, free cash flow, CapEx, and balance-sheet strength. At 60% or deeper, rebuild the valuation and thesis from the ground up.
+Tesla’s ten 30% events recovered in a median of 196 trading days, but its five 40% events required 567 days. Although the median rebound from a 40% trough was only 174 days, the complete decline-and-recovery cycle was long because Tesla often spent substantial time falling before the final bottom. The worst completed event required 779 trading days.
+
+**Strategy:** maintain only a 0x–0.5x base contribution. Do not add incrementally merely because the stock falls 20%. A 30% decline still supports only normal or modest deployment. Approximately 40% is the first meaningful zone at 1.5x–2x, but the allocation should be staged through evidence that deliveries, margins, or long-term optionality are stabilizing. Approximately 50% may justify 2.5x after reviewing automotive gross margin, pricing, FSD adoption and economics, Robotaxi regulation, Energy, free cash flow, CapEx, and balance-sheet strength. Expect the complete 40% recovery cycle to last more than two years. At 60% or deeper, rebuild the valuation and thesis from the ground up.
 
 ---
 
@@ -576,6 +721,116 @@ Assume 1x is the normal planned contribution to a stock, not a target portfolio 
 
 `*` Requires confirmation that the long-term business thesis and valuation remain attractive.
 
+## Recovery-Aware Capital Staging
+
+The drawdown multiplier determines how much capital should be deployed, while conditional recovery determines how quickly that capital should be deployed. A statistically rare drawdown can still remain unresolved for several years.
+
+| Company | First major add | Major add | Historical recovery planning assumption |
+|---|---:|---:|---|
+| MSFT | -20% | -30% | The only 30% event required 393 trading days; stage the rare opportunity rather than expecting an immediate rebound. |
+| GOOGL | -20% | -30% | Median 30% recovery was 214 days; the 40% event required 547 days and a Search-thesis review. |
+| AAPL | -20% | -30% | Median 30% recovery was 306 days; plan for approximately a year or more underwater. |
+| AVGO | -30% | -40% | Historically fast at 148 and 106 days, but the 40% result is based on two market-shock events. |
+| META | -30% | -40% | Median recoveries were 303 and 367 days; deploy across fundamental checkpoints. |
+| AMZN | -30% | -40% | Median 30% recovery was 272 days; the sole 40% event required 694 days. |
+| TSM | -30% | -40% review | Median 30% recovery was 320 days; the 40% event required 534 days and cycle confirmation. |
+| NVDA | -30% | -40% | Medians were 299 and 360 days, but the longest event lasted 1,161 days. |
+| TSLA | -40% | -50% | Median 40% recovery was 567 days; wait for evidence of stabilization before full deployment. |
+
+A practical major-drawdown allocation can be divided into three tranches:
+
+1. **Threshold tranche:** deployed when the company first enters its statistically meaningful drawdown zone.
+2. **Fundamental-confirmation tranche:** deployed after the next earnings report, industry datapoint, or operating update confirms that the thesis remains intact.
+3. **Stabilization tranche:** deployed after valuation, earnings expectations, or price behavior indicates that the decline is no longer accelerating.
+
+This structure does not attempt to identify the exact trough. It reduces the risk of exhausting dry powder during the early phase of a multi-quarter or multi-year recovery.
+
+## Suggested Capital Allocation by Risk Profile
+
+The following allocations translate the company classifications, drawdown frequencies, and conditional recovery periods into three illustrative model portfolios. Each portfolio totals 100% and includes a dedicated dry-powder allocation held in cash equivalents or short-duration government securities.
+
+The allocations are strategic starting weights rather than permanent limits. They should be adjusted for valuation, tax considerations, existing positions, liquidity needs, and the investor’s ability to tolerate a multi-year recovery. They also assume that this nine-company group is being managed as a standalone mega-cap technology allocation rather than as the investor’s entire financial portfolio.
+
+### Portfolio Weight Comparison
+
+| Company / Reserve | Conservative | Balanced / Base Case | Aggressive |
+|---|---:|---:|---:|
+| Microsoft | 20% | 16% | 12% |
+| Alphabet | 16% | 14% | 10% |
+| Apple | 16% | 13% | 9% |
+| Broadcom | 8% | 10% | 12% |
+| Meta | 7% | 9% | 10% |
+| Amazon | 9% | 10% | 10% |
+| TSMC | 7% | 8% | 8% |
+| NVIDIA | 7% | 11% | 18% |
+| Tesla | 2% | 4% | 8% |
+| Dry Powder / Short-Term Treasuries | 8% | 5% | 3% |
+| **Total** | **100%** | **100%** | **100%** |
+
+### Conservative Allocation
+
+The conservative portfolio assigns 52% to Microsoft, Alphabet, and Apple. These companies have the lowest or near-lowest downside volatility in the study and are the strongest candidates for continuous long-term ownership. Broadcom, Meta, and Amazon receive a combined 24%, preserving exposure to higher-growth platforms without allowing their tail risk to dominate the portfolio.
+
+TSMC and NVIDIA receive 7% each, while Tesla is limited to 2%. The 8% dry-powder allocation is the largest of the three profiles because the primary objective is to avoid forced selling and preserve flexibility during extended drawdowns.
+
+This profile is most suitable for an investor who prioritizes:
+
+- lower downside volatility;
+- a higher probability of remaining invested through a market cycle;
+- less dependence on AI infrastructure and optionality valuations; and
+- smaller position-level losses during 30%–50% drawdowns.
+
+The main trade-off is lower participation if NVIDIA, Broadcom, or Tesla substantially outperform the more stable compounders.
+
+### Balanced / Base-Case Allocation
+
+The balanced portfolio assigns 43% to Microsoft, Alphabet, and Apple; 29% to Broadcom, Meta, and Amazon; 8% to TSMC; 11% to NVIDIA; 4% to Tesla; and 5% to dry powder.
+
+This structure keeps the three core compounders as the portfolio foundation while providing meaningful exposure to AI infrastructure, cloud growth, advertising, and semiconductor demand. NVIDIA becomes a significant position but does not dominate the portfolio. Tesla remains large enough to contribute if its optionality is realized, but small enough that an ordinary 40%–50% drawdown does not determine the portfolio outcome.
+
+This is the most neutral allocation for an investor seeking:
+
+- long-term participation in all nine companies;
+- a balance between business stability and historical return potential;
+- enough dry powder to accelerate purchases during meaningful corrections; and
+- manageable dependence on any single AI, semiconductor, advertising, or automotive thesis.
+
+### Aggressive Allocation
+
+The aggressive portfolio reduces Microsoft, Alphabet, and Apple to a combined 31% and increases NVIDIA to 18%, Broadcom to 12%, Meta to 10%, and Tesla to 8%. TSMC and Amazon retain meaningful positions at 8% and 10% respectively.
+
+This allocation gives substantially more weight to the companies with the highest historical CAGR or strongest AI and optionality exposure. It also produces materially greater sensitivity to semiconductor cycles, hyperscaler capital spending, AI valuation, and Tesla-specific execution.
+
+Only 3% is held as standing dry powder. This does not mean the investor should deploy all available capital immediately. The aggressive profile should direct a larger share of future contributions toward major drawdowns rather than maintaining a large permanent cash balance.
+
+This profile is appropriate only for an investor able to tolerate:
+
+- frequent 20%–30% position-level declines;
+- occasional 40%–60% drawdowns in major holdings;
+- multi-year recovery periods; and
+- substantial performance dispersion relative to a broad-market benchmark.
+
+### Allocation of New Capital Across Drawdown Stages
+
+The strategic weights determine the long-term destination of capital. The following table determines how each profile can divide new annual contributions between regular investment and drawdown reserves.
+
+| Use of New Capital | Conservative | Balanced / Base Case | Aggressive |
+|---|---:|---:|---:|
+| Scheduled DCA at normal prices | 75% | 60% | 45% |
+| Reserve for first meaningful add zones | 15% | 20% | 20% |
+| Reserve for major or deep drawdown zones | 10% | 20% | 35% |
+| **Total New Capital** | **100%** | **100%** | **100%** |
+
+For the conservative investor, most new capital enters through regular DCA because the portfolio is concentrated in companies whose rare deep drawdowns can be costly to wait for. For the balanced investor, 40% of new capital is reserved for company-specific opportunities. For the aggressive investor, 55% is reserved for meaningful or major drawdowns, reflecting the greater probability that NVIDIA, Broadcom, Tesla, and other high-beta holdings will provide deeper entry points.
+
+### Rebalancing and Concentration Controls
+
+The allocation should be reviewed semiannually and after any position experiences an unusually large price move. New contributions should generally be used to rebalance underweight positions before selling appreciated holdings, particularly when sales create tax consequences.
+
+A position should receive a specific fundamental review when it exceeds 1.5 times its strategic target weight. For example, an 11% balanced NVIDIA target would trigger review near 16.5%. This is not an automatic sell rule. It is a concentration checkpoint used to determine whether future contributions should be redirected elsewhere.
+
+Dry powder should be replenished gradually after it is deployed. A practical approach is to rebuild the reserve through new contributions, dividends, or partial rebalancing after the relevant stock recovers materially, rather than selling immediately after the first rebound.
+
 ## Portfolio-Level Dry Powder
 
 Dry powder should be assigned according to the probability that a stock will present deeper entry points.
@@ -599,9 +854,182 @@ A rare drawdown caused by temporary macro fear can be an opportunity. A rare dra
 
 ---
 
+# Post-Recovery Breakout Retest and De-Risking Framework
+
+The preceding sections address position initiation and accumulation during drawdowns. This section addresses the other side of the capital-allocation process: what to do after the stock has fully recovered and closed back above its pre-drawdown high.
+
+The purpose is not to convert long-term positions into short-term trades. It is to determine whether a recovered breakout has historically tended to hold, whether the stock commonly returns to test the old high, and whether an investor should continue holding the full position or rebalance a tactical portion after recovery.
+
+## Methodology and Definitions
+
+The analysis identifies independent peak-to-recovery drawdown events using adjusted daily closing prices through December 31, 2025.
+
+A **recovered breakout** occurs when a stock that previously declined at least 20%, 30%, or 40% records its first adjusted close at or above the high that preceded the drawdown.
+
+A **retest** occurs when, after that recovery date, at least one adjusted daily close returns to the previous high or below it.
+
+A **confirmed break** requires five consecutive adjusted daily closes below the previous high. This stricter measure helps distinguish a brief test of support from a more persistent failed breakout.
+
+Retest probabilities are measured over three fixed windows:
+
+- Three months, represented by 63 trading days;
+- Six months, represented by 126 trading days;
+- One year, represented by 252 trading days.
+
+To make the three horizons directly comparable, all probabilities use the same fixed cohort of events with at least one complete year of post-breakout price history. The calculation is:
+
+**Retest Probability = Qualifying Recovered Breakouts That Retested the Old High / Qualifying Recovered Breakouts with One Full Year of Subsequent Data**
+
+The drawdown groups are nested. A 45% drawdown is included in the at-least-20%, at-least-30%, and at-least-40% samples. Only completed recoveries enter the analysis because an unrecovered drawdown does not yet have a post-breakout observation period.
+
+These results are historical sample frequencies, not forecasts of future probability.
+
+## Retest Probability After Drawdowns of at Least 20%
+
+| Company | Complete 1Y Events | Retest Within 3M | Retest Within 6M | Retest Within 1Y | Confirmed Break Within 1Y |
+|---|---:|---:|---:|---:|---:|
+| NVIDIA | 8 | 75.0% | 75.0% | 75.0% | 50.0% |
+| Tesla | 12 | 75.0% | 83.3% | 91.7% | 75.0% |
+| Broadcom | 11 | 81.8% | 81.8% | 81.8% | 72.7% |
+| Meta | 6 | 83.3% | 83.3% | 83.3% | 50.0% |
+| Apple | 6 | 50.0% | 66.7% | 66.7% | 50.0% |
+| TSMC | 7 | 85.7% | 85.7% | 85.7% | 85.7% |
+| Amazon | 8 | 62.5% | 62.5% | 62.5% | 50.0% |
+| Microsoft | 3 | 66.7% | 100.0% | 100.0% | 66.7% |
+| Alphabet | 6 | 100.0% | 100.0% | 100.0% | 100.0% |
+
+A retest following a 20% drawdown recovery was common across the group. Apple and Amazon recorded the lowest one-year retest rates, at 66.7% and 62.5%, respectively. NVIDIA’s 75% retest rate was materially higher, but only half of its events produced a confirmed break, indicating that several retests were temporary support tests.
+
+Tesla displayed one of the weakest breakout structures. Its one-year retest rate reached 91.7%, and 75% of the events closed below the old high for at least five consecutive trading days. Broadcom also retested frequently, with a 72.7% confirmed-break rate, although its long-term compounding and strong post-recovery upside make a full exit inappropriate in most cases.
+
+Meta illustrates why a one-day retest should not automatically be classified as a failed breakout. Its one-year retest rate was 83.3%, but its confirmed-break rate was only 50%. TSMC and Alphabet recorded the highest confirmed-break frequencies, suggesting that a first close above the old high has historically been a less reliable stand-alone entry or hold signal for those stocks.
+
+Microsoft’s result is based on only three complete events. Its 100% one-year retest rate should not outweigh the rarity of deep Microsoft drawdowns or the durability of the underlying business.
+
+## Retest Probability After Drawdowns of at Least 30%
+
+| Company | Complete 1Y Events | Retest Within 3M | Retest Within 6M | Retest Within 1Y | Confirmed Break Within 1Y |
+|---|---:|---:|---:|---:|---:|
+| NVIDIA | 5 | 80.0% | 80.0% | 80.0% | 40.0% |
+| Tesla | 9 | 66.7% | 77.8% | 88.9% | 66.7% |
+| Broadcom | 3 | 66.7% | 66.7% | 66.7% | 66.7% |
+| Meta | 4 | 100.0% | 100.0% | 100.0% | 50.0% |
+| Apple | 5 | 40.0% | 60.0% | 60.0% | 40.0% |
+| TSMC | 1 | 100.0% | 100.0% | 100.0% | 100.0% |
+| Amazon | 3 | 100.0% | 100.0% | 100.0% | 66.7% |
+| Microsoft | 1 | 100.0% | 100.0% | 100.0% | 100.0% |
+| Alphabet | 3 | 100.0% | 100.0% | 100.0% | 100.0% |
+
+Apple produced the most stable post-recovery breakout structure in the 30% sample. Only 40% of its complete events retested within three months, 60% retested within one year, and 40% produced a confirmed break.
+
+NVIDIA retested the previous high in 80% of complete events, but its confirmed-break probability was only 40%. This gap is important: NVIDIA often revisited the breakout zone, but a majority of those events did not remain below it for five consecutive sessions. Selling the entire position on the first retest would therefore have created a meaningful risk of missing a renewed advance.
+
+Tesla’s one-year retest probability was 88.9%, with a 66.7% confirmed-break rate. Relative to NVIDIA, Tesla was more likely to turn a retest into a sustained move below the breakout level.
+
+Meta retested in every event, but only half became confirmed breaks. Its characteristic pattern was recovery, a return to test the previous high, and—during several events—a renewed advance. Amazon and Alphabet also retested in every complete 30% event, although each company had only three complete observations.
+
+## Retest Probability After Drawdowns of at Least 40%
+
+| Company | Complete 1Y Events | Retest Within 3M | Retest Within 6M | Retest Within 1Y | Confirmed Break Within 1Y |
+|---|---:|---:|---:|---:|---:|
+| NVIDIA | 4 | 75.0% | 75.0% | 75.0% | 50.0% |
+| Tesla | 4 | 50.0% | 50.0% | 75.0% | 50.0% |
+| Broadcom | 1 | 100.0% | 100.0% | 100.0% | 100.0% |
+| Meta | 3 | 100.0% | 100.0% | 100.0% | 66.7% |
+| Apple | 1 | 100.0% | 100.0% | 100.0% | 100.0% |
+| TSMC | 1 | 100.0% | 100.0% | 100.0% | 100.0% |
+| Amazon | 1 | 100.0% | 100.0% | 100.0% | 100.0% |
+| Microsoft | 0 | Not observed | Not observed | Not observed | Not observed |
+| Alphabet | 1 | 100.0% | 100.0% | 100.0% | 100.0% |
+
+The 40% results should be treated primarily as historical case evidence. Only NVIDIA, Tesla, and Meta have more than one or two complete observations. NVIDIA and Tesla each recorded a 75% one-year retest rate and a 50% confirmed-break rate. Meta retested after all three events, while two of the three became confirmed breaks.
+
+The 100% figures for Broadcom, Apple, TSMC, Amazon, and Alphabet each represent one event out of one. They are not robust estimates of forward probability. Microsoft had no completed 40% event in the selected sample.
+
+## Company-by-Company Post-Recovery Interpretation
+
+### Microsoft
+
+Microsoft should generally be held after recovering its previous high. The available statistical sample is too small to support mechanical selling, while the opportunity cost of exiting a durable Azure, Microsoft 365, Security, and AI-platform compounder can be substantial. A sale is more appropriate when the position materially exceeds its strategic weight or when valuation and forward returns have become unattractive—not simply because the old high has been recovered.
+
+### Apple
+
+Apple displayed the most stable 30% post-recovery breakout profile. Its relatively low retest and confirmed-break rates support continuing to hold the full core position. A later retest can be treated as a potential support test and reassessed against installed-base retention, Services growth, China exposure, AI competitiveness, and valuation.
+
+### Meta
+
+Meta frequently retested its previous high, but a much smaller share of those retests developed into confirmed breaks. This makes Meta better suited to direct ownership through the recovery than to automatic profit-taking at the old high. The investor should tolerate ordinary support testing while monitoring advertising pricing, engagement, AI recommendation economics, capital expenditure, and Reality Labs losses.
+
+### NVIDIA
+
+NVIDIA also showed a large gap between ordinary retests and confirmed breaks. Because the stock can move rapidly once an AI capital-expenditure cycle strengthens, aggressive selling immediately after recovery can create substantial re-entry risk. The preferred approach is to retain the core position and trim only if valuation, cycle risk, or position concentration has become excessive.
+
+### Broadcom
+
+Broadcom’s retest and confirmed-break rates were relatively high, but the company also delivered strong historical post-recovery upside. The appropriate response is not a full exit. Retaining the core position while rebalancing a small tactical portion is more consistent with its combination of high compounding, semiconductor cyclicality, VMware integration risk, and customer concentration.
+
+### Amazon
+
+All three complete 30% recovery events returned to the previous high, and two produced confirmed breaks. Amazon is therefore a reasonable candidate for partial tactical profit-taking after recovery, particularly when AWS growth, retail margins, or free-cash-flow expectations no longer justify the valuation. Most of the long-term position should nevertheless remain invested.
+
+### Alphabet
+
+Alphabet recorded a retest and confirmed break in every complete 20% and 30% event in the sample. Although the samples remain limited, the consistency supports trimming a tactical portion after recovery and reserving capital for a potential retest. This should not become a full exit unless Search economics, AI monetization, Cloud profitability, or capital efficiency has structurally weakened.
+
+### TSMC
+
+TSMC’s high retest frequency, combined with semiconductor cyclicality and geopolitical risk, supports partial rebalancing after recovery. The amount should depend on foundry utilization, advanced-node demand, earnings revisions, gross margin, and the stage of the semiconductor cycle. A recovery that occurs while earnings expectations are still accelerating is more durable than one that occurs near a cyclical earnings peak.
+
+### Tesla
+
+Tesla has the strongest statistical case for partial de-risking after recovering its previous high. Its one-year retest rate was 91.7% following 20% events and 88.9% following 30% events. Its confirmed-break rates were also materially higher than NVIDIA’s. Because Tesla can still deliver explosive post-breakout gains, the appropriate action is partial rebalancing rather than a full exit.
+
+## Suggested Post-Recovery Rebalancing Matrix
+
+| Company | Default Action After Recovering the Old High | Indicative Tactical Reduction | Interpretation |
+|---|---|---:|---|
+| Microsoft | Hold directly | 0%–10% | Deep-drawdown sample is too small; business durability dominates the retest statistic |
+| Apple | Hold directly | 0%–10% | Most stable 30% recovery-breakout structure in the group |
+| Meta | Hold and tolerate a retest | 0%–10% | Retests are common, but many do not become sustained breaks |
+| NVIDIA | Retain the core position | 0%–15% | High retest rate but lower confirmed-break rate; significant re-entry risk |
+| Broadcom | Hold core and take limited profits | 10%–15% | High compounding potential with meaningful cycle and concentration risk |
+| Amazon | Trim a tactical portion | 10%–20% | Every complete 30% event retested the previous high |
+| Alphabet | Trim and reserve capital for a retest | 15%–25% | Every complete 20% and 30% event produced a confirmed break in the sample |
+| TSMC | Apply cyclical rebalancing | 15%–25% | High retest frequency and material semiconductor-cycle exposure |
+| Tesla | Actively reduce the tactical sleeve | 20%–30% | Highest combination of retest frequency and unstable post-breakout price path |
+
+The percentages refer to the position held in the individual stock, not to total portfolio value. They are indicative rebalancing ranges rather than mandatory sale rules.
+
+## How to Apply the De-Risking Framework
+
+The historical retest rate should determine how much tactical capital remains available. Business quality should determine how much of the core position remains invested.
+
+For Microsoft, Apple, and Meta, recovering the old high generally supports continued ownership. A mechanical sale can create unnecessary tax, timing, and re-entry costs.
+
+For NVIDIA and Broadcom, the core position should generally remain intact, but an investor may rebalance a small amount when the stock is materially overweight or valuation has expanded well beyond underlying earnings growth.
+
+For Amazon, Alphabet, TSMC, and Tesla, the historical evidence provides a stronger case for trimming a tactical portion and waiting for a possible retest. Even for these companies, the framework does not support a complete exit based only on price behavior.
+
+A practical sequence is:
+
+1. Allow the stock to recover and close above the previous high.
+2. Reassess valuation, earnings revisions, business momentum, and position concentration.
+3. Retain the strategic core position.
+4. Trim only the tactical percentage indicated by the company’s historical behavior and current valuation.
+5. If the stock retests the old high, require evidence that support is stabilizing before repurchasing the tactical sleeve.
+6. If the stock records a confirmed break, reassess whether the event reflects normal volatility, a cyclical slowdown, or structural thesis impairment.
+
+The final principle is:
+
+**Retest probability determines whether to reserve tactical capital; business quality determines whether to retain the core position.**
+
+---
+
 # Limitations and Future Extension
 
-The historical sample is short for estimating true tail probabilities. Annual maximum drawdown also records only one observation per calendar year and does not count independent corrections. A future event-based extension should identify each distinct peak-to-trough episode and measure event frequency, duration, recovery, clustering, and macro regime.
+The historical sample is short for estimating true tail probabilities. The annual recurrence analysis records only one maximum drawdown per calendar year. Section 5 supplements it with independent peak-to-recovery events, but several 40% conditional-recovery results are based on only one or two observations. Those medians should be treated as historical case evidence rather than stable estimates of future recovery time.
+
+The event study includes only completed recoveries within the selected sample and defines recovery as the first adjusted close at or above the previous peak. It does not adjust the recovery target for inflation, opportunity cost, changes in valuation multiples, or the return available from an alternative investment. A stock can therefore be statistically “recovered” while still having delivered a weak real or relative return over the underwater period.
 
 The business-mix tables use different fiscal-quarter endpoints. Segment definitions also differ: revenue shares are comparable as concentration indicators, not as identical accounting categories. TSMC reports platform growth sequentially, while most other tables use year-over-year growth. Tesla’s automotive figure is derived from total revenue less the two separately disclosed non-automotive categories and is therefore shown as approximate.
 
@@ -623,11 +1051,15 @@ NVIDIA is a high-beta AI compounder. A 20% decline is ordinary; 30% is the first
 
 Tesla is an optionality-heavy asset. A 20%–30% decline is not statistically unusual. Meaningful incremental buying begins closer to 40%, while 50% requires detailed validation of both current automotive economics and future autonomy, robotics, and energy value.
 
+Recovery duration adds a final constraint. Meta’s ordinary corrections recovered quickly, but its 30%–40% events required approximately 303–367 trading days. NVIDIA’s median deep-drawdown recovery was approximately one to one and a half years, but its longest cycle exceeded four years. Tesla’s median 40% event required 567 days, while Amazon’s sole 40% event required 694. A statistically attractive entry should therefore be paired with a realistic holding horizon and staged capital deployment.
+
+Once a position has recovered its previous high, the framework shifts from accumulation to rebalancing. Microsoft, Apple, and Meta are generally best held directly. NVIDIA and Broadcom should retain their core positions, with only limited trimming when valuation or concentration becomes excessive. Amazon, Alphabet, TSMC, and especially Tesla provide a stronger historical case for reducing a tactical portion and reserving that capital for a potential retest. Retest probability determines how much tactical capital to reserve; business quality determines how much of the core position to retain.
+
 The objective is not to predict the exact bottom. It is to convert volatility into a disciplined capital-allocation process: understand what the company earns money from, measure how unusual the drawdown really is, confirm that the business thesis survives, and increase investment intensity only when price and fundamentals align.
 
 ---
 
-## Primary Financial Sources
+## Primary Financial and Price Sources
 
 - NVIDIA, FY2027 Q1 financial results, May 20, 2026.
 - Tesla, Q2 2026 Update, July 22, 2026.
@@ -638,3 +1070,4 @@ The objective is not to predict the exact bottom. It is to convert volatility in
 - Amazon, Q2 2026 results, July 30, 2026.
 - Microsoft, FY2026 Q4 results, July 2026.
 - Alphabet, Q2 2026 earnings release, July 22, 2026.
+- Yahoo Finance adjusted daily closing prices through December 31, 2025. Adjusted prices reflect applicable stock splits and cash distributions.

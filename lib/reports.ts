@@ -55,13 +55,13 @@ export const reports: ResearchReport[] = [
       "NVIDIA · Tesla · Broadcom · Meta · Apple · TSMC · Amazon · Microsoft · Alphabet",
     published: "2026-08-12",
     displayDate: "August 12, 2026",
-    pages: 17,
+    pages: 29,
     abstract:
-      "This report combines current business fundamentals with historical return, drawdown, volatility and recovery analysis for nine mega-cap technology and technology-adjacent companies. The resulting framework calibrates staged accumulation to each company’s economic engine, thesis integrity, historical drawdown rarity and valuation.",
+      "This report combines current business fundamentals with historical return, drawdown, volatility, deep-drawdown recovery and post-recovery retest analysis for nine mega-cap technology and technology-adjacent companies. It translates the evidence into staged accumulation, model portfolio allocation and tactical de-risking frameworks.",
     takeaways: [
       "Microsoft, Alphabet and Apple are the strongest continuous-DCA candidates, supported by durable business models and comparatively moderate historical downside.",
-      "Broadcom, Meta and Amazon merit baseline ownership with more capital reserved for 30%–40% corrections and company-specific thesis validation.",
-      "TSMC, NVIDIA and Tesla require lighter baseline exposure and deeper, fundamentally confirmed drawdowns before aggressive staged buying.",
+      "Conditional recovery history shows that severe drawdowns can leave even high-quality compounders underwater for one to three years, supporting staged deployment rather than single-point buying.",
+      "After recovery, business quality determines the strategic core position while historical retest behavior informs how much tactical exposure to rebalance.",
     ],
     pdf: "/reports/mega_cap_technology_drawdown_framework.pdf",
     featured: false,

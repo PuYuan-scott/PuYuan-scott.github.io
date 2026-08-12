@@ -53,15 +53,15 @@ export const reports: ResearchReport[] = [
     title: "Mega-Cap Technology Drawdown and Accumulation Framework",
     company:
       "NVIDIA · Tesla · Broadcom · Meta · Apple · TSMC · Amazon · Microsoft · Alphabet",
-    published: "2026-08-11",
-    displayDate: "August 11, 2026",
-    pages: 47,
+    published: "2026-08-12",
+    displayDate: "August 12, 2026",
+    pages: 17,
     abstract:
-      "This report compares the long-term returns, annual drawdown frequency, volatility, recovery characteristics and staged accumulation strategies of nine mega-cap technology and technology-adjacent companies. It evaluates each drawdown relative to the historical behavior of the individual stock rather than applying a universal percentage threshold.",
+      "This report combines current business fundamentals with historical return, drawdown, volatility and recovery analysis for nine mega-cap technology and technology-adjacent companies. The resulting framework calibrates staged accumulation to each company’s economic engine, thesis integrity, historical drawdown rarity and valuation.",
     takeaways: [
-      "Microsoft, Alphabet and Apple are the strongest candidates for continuous long-term dollar-cost averaging because deep drawdowns have historically been relatively infrequent.",
-      "Broadcom, Meta and Amazon are better suited to a hybrid approach combining ongoing investment with dry powder for larger corrections.",
-      "TSMC requires a semiconductor-cycle overlay, while NVIDIA and Tesla require deeper drawdown thresholds before aggressive staged buying.",
+      "Microsoft, Alphabet and Apple are the strongest continuous-DCA candidates, supported by durable business models and comparatively moderate historical downside.",
+      "Broadcom, Meta and Amazon merit baseline ownership with more capital reserved for 30%–40% corrections and company-specific thesis validation.",
+      "TSMC, NVIDIA and Tesla require lighter baseline exposure and deeper, fundamentally confirmed drawdowns before aggressive staged buying.",
     ],
     pdf: "/reports/mega_cap_technology_drawdown_framework.pdf",
     featured: false,

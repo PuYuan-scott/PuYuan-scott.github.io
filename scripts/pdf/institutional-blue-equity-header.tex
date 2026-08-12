@@ -17,6 +17,8 @@
 \providecommand{\ResearchSector}{AI INFRASTRUCTURE}
 \providecommand{\ResearchRunningHeader}{AI INFRASTRUCTURE EQUITY RESEARCH}
 \providecommand{\ResearchDescription}{Independent research on AI infrastructure, capital intensity, cash returns and valuation.}
+\providecommand{\ResearchTableSize}{\small}
+\providecommand{\ResearchSubtitleSize}{\fontsize{11}{15}\selectfont}
 
 \pagecolor{white}
 \color{ResearchInk}
@@ -25,7 +27,7 @@
 \setlist[itemize]{leftmargin=1.45em,itemsep=0.12em,topsep=0.25em,parsep=0pt}
 \setlist[enumerate]{leftmargin=1.65em,itemsep=0.18em,topsep=0.25em,parsep=0pt}
 \renewcommand{\arraystretch}{1.22}
-\AtBeginEnvironment{longtable}{\small\sffamily\setlength{\tabcolsep}{5pt}}
+\AtBeginEnvironment{longtable}{\ResearchTableSize\sffamily\setlength{\tabcolsep}{5pt}}
 
 \renewenvironment{quote}
   {\begin{list}{}{\setlength{\leftmargin}{1.2em}\setlength{\rightmargin}{0.5em}}
@@ -44,7 +46,14 @@
       \ResearchDisplay\color{white}\fontsize{17}{21}\selectfont\bfseries\thesection.\enspace #1}}%
   \par\nobreak\vspace{1.05ex}%
 }
-\renewcommand{\section}{\@ifstar{\researcholdsection*}{\researchsection}}
+\newcommand{\researchsectionstar}[1]{%
+  \par\addpenalty{-\@highpenalty}\addvspace{2.6ex}%
+  \noindent\colorbox{ResearchBanner}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+      \ResearchDisplay\color{white}\fontsize{17}{21}\selectfont\bfseries #1}}%
+  \par\nobreak\vspace{1.05ex}%
+}
+\renewcommand{\section}{\@ifstar{\researchsectionstar}{\researchsection}}
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
   {-2.2ex \@plus -.8ex \@minus -.2ex}%
   {0.75ex \@plus .2ex}%
@@ -97,7 +106,7 @@
             \vspace{8mm}
             {\fontsize{25}{31}\selectfont\bfseries\@title\par}
             \vspace{7mm}
-            {\fontsize{11}{15}\selectfont\bfseries\@subtitle\par}}%
+            {\ResearchSubtitleSize\bfseries\@subtitle\par}}%
           \vspace{6mm}}}%
       \endgroup}
     \vspace{18mm}

@@ -13,6 +13,7 @@
     "build:economic-update": "bash scripts/build-economic-update-pdf.sh",
     "build:memory-cycle-report": "bash scripts/build-memory-cycle-report.sh",
     "build:ai-capex-report": "bash scripts/build-ai-capex-report.sh",
+    "build:mega-cap-drawdown-report": "bash scripts/build-mega-cap-drawdown-report.sh",
     "deploy:vinext": "vinext-cloudflare deploy --config dist/server/wrangler.json"
   },
   "dependencies": {

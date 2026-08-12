@@ -47,6 +47,26 @@ export const categories: {
 
 export const reports: ResearchReport[] = [
   {
+    slug: "mega-cap-technology-drawdown-framework",
+    category: "equity-research",
+    categoryLabel: "Equity Research",
+    title: "Mega-Cap Technology Drawdown and Accumulation Framework",
+    company:
+      "NVIDIA · Tesla · Broadcom · Meta · Apple · TSMC · Amazon · Microsoft · Alphabet",
+    published: "2026-08-11",
+    displayDate: "August 11, 2026",
+    pages: 47,
+    abstract:
+      "This report compares the long-term returns, annual drawdown frequency, volatility, recovery characteristics and staged accumulation strategies of nine mega-cap technology and technology-adjacent companies. It evaluates each drawdown relative to the historical behavior of the individual stock rather than applying a universal percentage threshold.",
+    takeaways: [
+      "Microsoft, Alphabet and Apple are the strongest candidates for continuous long-term dollar-cost averaging because deep drawdowns have historically been relatively infrequent.",
+      "Broadcom, Meta and Amazon are better suited to a hybrid approach combining ongoing investment with dry powder for larger corrections.",
+      "TSMC requires a semiconductor-cycle overlay, while NVIDIA and Tesla require deeper drawdown thresholds before aggressive staged buying.",
+    ],
+    pdf: "/reports/mega_cap_technology_drawdown_framework.pdf",
+    featured: false,
+  },
+  {
     slug: "memory-cycle-price-led-rollover",
     category: "equity-research",
     categoryLabel: "Equity Research",

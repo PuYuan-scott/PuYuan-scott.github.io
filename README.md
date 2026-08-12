@@ -61,5 +61,19 @@ Source: `content/drafts/ai-capex-cycle-cash-return-phase-equity-research.md`
 
 Output: `public/reports/ai_capex_cycle_cash_return_phase.pdf`
 
+The Mega-Cap Technology Drawdown report preserves the original report content
+and adds the shared institutional cover, contents page, section styling,
+running headers, page numbers and PDF navigation with:
+
+```bash
+npm run build:mega-cap-drawdown-report
+```
+
+Source: `content/source-pdfs/mega-cap-technology-drawdown-framework-original.pdf`
+
+Front matter: `content/drafts/mega-cap-technology-drawdown-front-matter.md`
+
+Output: `public/reports/mega_cap_technology_drawdown_framework.pdf`
+
 Research reports are published for informational, educational, and analytical
 purposes only and do not constitute investment advice.

@@ -3,36 +3,24 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "vinext dev --port 3001",
-    "build": "vinext build",
+    "dev": "next dev --port 3001",
+    "build": "next build",
     "build:pages": "GITHUB_PAGES=true next build",
-    "postbuild": "node scripts/prepare-hosting.mjs",
-    "start": "wrangler dev --config dist/server/wrangler.json",
-    "dev:next": "next dev",
-    "build:next": "next build",
+    "start": "next start",
     "build:economic-update": "bash scripts/build-economic-update-pdf.sh",
     "build:memory-cycle-report": "bash scripts/build-memory-cycle-report.sh",
     "build:ai-capex-report": "bash scripts/build-ai-capex-report.sh",
-    "build:mega-cap-drawdown-report": "bash scripts/build-mega-cap-drawdown-report.sh",
-    "deploy:vinext": "vinext-cloudflare deploy --config dist/server/wrangler.json"
+    "build:mega-cap-drawdown-report": "bash scripts/build-mega-cap-drawdown-report.sh"
   },
   "dependencies": {
-    "@vinext/cloudflare": "^1.0.0-beta.4",
     "next": "^16.2.12",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "react-server-dom-webpack": "^19.2.8",
-    "vinext": "^1.0.0-beta.4"
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "^1.47.0",
     "@types/node": "^26.1.1",
     "@types/react": "^19.2.17",
-    "@vitejs/plugin-react": "^6.0.4",
-    "@vitejs/plugin-rsc": "^0.5.30",
-    "typescript": "^6.0.3",
-    "vite": "^8.1.5",
-    "wrangler": "^4.114.0"
+    "typescript": "^6.0.3"
   },
   "overrides": {
     "postcss": "8.5.18",

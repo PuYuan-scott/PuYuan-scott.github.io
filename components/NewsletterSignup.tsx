@@ -14,7 +14,7 @@ export default function NewsletterSignup() {
             src={BREVO_FORM_URL}
             title="Subscribe to Scott Yuan Research updates"
             width="540"
-            height="430"
+            height="620"
             frameBorder="0"
             scrolling="no"
             loading="lazy"

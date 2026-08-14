@@ -817,7 +817,7 @@ nav a:focus-visible {
 }
 
 .newsletter-signup {
-  padding: 54px 0;
+  padding: 30px 0;
   border-top: 1px solid var(--line);
   background: var(--paper);
 }
@@ -827,14 +827,23 @@ nav a:focus-visible {
   justify-content: center;
 }
 
+.newsletter-signup-frame-shell {
+  width: 486px;
+  max-width: 100%;
+  height: 387px;
+  overflow: hidden;
+}
+
 .newsletter-signup-frame {
   display: block;
   width: 540px;
-  max-width: 100%;
-  height: 350px;
-  margin: 0 auto;
+  max-width: none;
+  height: 430px;
+  margin: 0;
   border: 0;
   overflow: hidden;
+  transform: scale(0.9);
+  transform-origin: top left;
 }
 
 .site-footer {
@@ -1099,11 +1108,18 @@ nav a:focus-visible {
   }
 
   .newsletter-signup {
-    padding: 38px 0;
+    padding: 26px 0;
+  }
+
+  .newsletter-signup-frame-shell {
+    width: 100%;
+    height: 459px;
   }
 
   .newsletter-signup-frame {
-    height: 500px;
+    width: 117.6471%;
+    height: 540px;
+    transform: scale(0.85);
   }
 }
 

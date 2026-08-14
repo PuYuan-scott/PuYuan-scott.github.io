@@ -8,17 +8,19 @@ export default function NewsletterSignup() {
       aria-label="Subscribe to Scott Yuan Research updates"
     >
       <div className="page-shell newsletter-signup-inner">
-        <iframe
-          className="newsletter-signup-frame"
-          src={BREVO_FORM_URL}
-          title="Subscribe to Scott Yuan Research updates"
-          width="540"
-          height="350"
-          frameBorder="0"
-          scrolling="no"
-          loading="lazy"
-          allowFullScreen
-        />
+        <div className="newsletter-signup-frame-shell">
+          <iframe
+            className="newsletter-signup-frame"
+            src={BREVO_FORM_URL}
+            title="Subscribe to Scott Yuan Research updates"
+            width="540"
+            height="430"
+            frameBorder="0"
+            scrolling="no"
+            loading="lazy"
+            allowFullScreen
+          />
+        </div>
       </div>
     </section>
   );

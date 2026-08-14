@@ -816,6 +816,26 @@ nav a:focus-visible {
   font-size: 12px;
 }
 
+.newsletter-signup {
+  padding: 54px 0;
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.newsletter-signup-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-signup-frame {
+  display: block;
+  width: 540px;
+  max-width: 100%;
+  height: 305px;
+  margin: 0 auto;
+  border: 0;
+}
+
 .site-footer {
   padding: 47px 0 40px;
   background: var(--navy);
@@ -1076,10 +1096,19 @@ nav a:focus-visible {
   .insight-article-links .text-link {
     margin-top: 0;
   }
+
+  .newsletter-signup {
+    padding: 38px 0;
+  }
+
+  .newsletter-signup-frame {
+    height: 430px;
+  }
 }
 
 @media print {
   .site-header,
+  .newsletter-signup,
   .site-footer,
   .report-actions {
     display: none;

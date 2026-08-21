@@ -17,6 +17,7 @@ export type ResearchReport = {
   takeaways: string[];
   pdf: string;
   spreadsheet?: string;
+  repository?: string;
   featured: boolean;
 };
 
@@ -46,6 +47,28 @@ export const categories: {
 ];
 
 export const reports: ResearchReport[] = [
+  {
+    slug: "coca-cola-post-ccba-intrinsic-value",
+    category: "equity-research",
+    categoryLabel: "Equity Research",
+    title:
+      "The Coca-Cola Company (KO): A Post-CCBA Intrinsic Value Assessment",
+    company: "The Coca-Cola Company",
+    ticker: "KO",
+    published: "2026-08-19",
+    displayDate: "August 19, 2026",
+    pages: 16,
+    abstract:
+      "This report estimates Coca-Cola’s intrinsic value using a post-CCBA FCFF discounted cash flow model. It reconstructs a comparable operating baseline after the disposal of the capital-intensive bottling business, develops integrated Bear, Base and Bull scenarios, and separately values the potential balance-sheet and future-tax consequences of the IRS transfer-pricing dispute.",
+    takeaways: [
+      "The Base Case produces core fair value of $74.22 per share and risk-adjusted fair value of $72.24 after incorporating the IRS dispute.",
+      "Removing CCBA lowers reported revenue but improves the expected margin and capital-intensity profile of the remaining business.",
+      "Terminal value represents 82.8% of Base Case enterprise value, making WACC, terminal growth and terminal ROIC central to the valuation range.",
+    ],
+    pdf: "/reports/coca_cola_post_ccba_intrinsic_value_assessment.pdf",
+    repository: "https://github.com/PuYuan-scott/fair_value_analysis",
+    featured: false,
+  },
   {
     slug: "mega-cap-technology-drawdown-framework",
     category: "equity-research",

@@ -66,6 +66,17 @@ export default function ReportCard({
           Open PDF
           <span aria-hidden="true">↗</span>
         </a>
+        {report.repository && (
+          <a
+            className="button button-secondary"
+            href={report.repository}
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Valuation Model
+            <span aria-hidden="true">↗</span>
+          </a>
+        )}
         {report.spreadsheet && (
           <a
             className="button button-secondary"
@@ -78,6 +89,7 @@ export default function ReportCard({
         )}
         <span className="file-note">
           PDF · {report.pages} pages{report.spreadsheet ? " · XLSX" : ""}
+          {report.repository ? " · GitHub" : ""}
         </span>
       </div>
     </article>

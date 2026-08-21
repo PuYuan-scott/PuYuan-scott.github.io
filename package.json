@@ -10,7 +10,8 @@
     "build:economic-update": "bash scripts/build-economic-update-pdf.sh",
     "build:memory-cycle-report": "bash scripts/build-memory-cycle-report.sh",
     "build:ai-capex-report": "bash scripts/build-ai-capex-report.sh",
-    "build:mega-cap-drawdown-report": "bash scripts/build-mega-cap-drawdown-report.sh"
+    "build:mega-cap-drawdown-report": "bash scripts/build-mega-cap-drawdown-report.sh",
+    "build:ko-dcf-report": "bash scripts/build-ko-dcf-report.sh"
   },
   "dependencies": {
     "next": "^16.2.12",

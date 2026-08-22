@@ -8,6 +8,7 @@
     "build:pages": "GITHUB_PAGES=true next build",
     "start": "next start",
     "build:economic-update": "bash scripts/build-economic-update-pdf.sh",
+    "build:economic-cycle-framework": "bash scripts/build-economic-cycle-framework.sh",
     "build:memory-cycle-report": "bash scripts/build-memory-cycle-report.sh",
     "build:ai-capex-report": "bash scripts/build-ai-capex-report.sh",
     "build:mega-cap-drawdown-report": "bash scripts/build-mega-cap-drawdown-report.sh",

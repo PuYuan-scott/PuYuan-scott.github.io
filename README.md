@@ -29,7 +29,7 @@ npm run build
 ## Economic report PDF
 
 The August 7 economic-cycle update is maintained as Markdown and rendered into
-the published black-and-gold PDF with:
+the published institutional blue, white, and black PDF with:
 
 ```bash
 npm run build:economic-update
@@ -40,7 +40,7 @@ Source: `content/reports/us-late-cycle-slowdown-2026-08-07.md`
 Output: `public/reports/us_late_cycle_slowdown_august_2026.pdf`
 
 The Memory Cycle equity-research report is maintained as Markdown and rendered
-into the published black-and-gold PDF with:
+into the published institutional blue, white, and black PDF with:
 
 ```bash
 npm run build:memory-cycle-report
@@ -49,6 +49,14 @@ npm run build:memory-cycle-report
 Source: `content/drafts/memory-cycle-price-led-rollover-equity-research.md`
 
 Output: `public/reports/memory_cycle_at_an_inflection_point.pdf`
+
+### Rebuild the economic-cycle framework PDF
+
+```bash
+npm run build:economic-cycle-framework
+```
+
+Output: `public/reports/economic_cycle_framework.pdf`
 
 The AI CapEx Cycle equity-research report is maintained as Markdown and
 rendered in the institutional blue, white, and black format with:

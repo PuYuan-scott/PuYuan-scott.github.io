@@ -116,7 +116,7 @@ export const reports: ResearchReport[] = [
     title: "The Fed’s New Problem: Weak Jobs Without Low Inflation",
     published: "2026-08-07",
     displayDate: "August 7, 2026",
-    pages: 17,
+    pages: 11,
     abstract:
       "The July employment report revealed a harder policy problem than the growth scare of August 2024. Payroll growth is now near stall speed and participation has weakened, yet inflation remains above target while private demand, manufacturing and credit conditions are still resilient. The economy is not in recession, but the Federal Reserve has no simple response to weak hiring without low inflation.",
     takeaways: [
@@ -174,7 +174,7 @@ export const reports: ResearchReport[] = [
       "Economic Cycle Framework: Five-Dimension Assessment, Market Performance, and Late-Cycle Pathways",
     published: "2026-07-29",
     displayDate: "July 29, 2026",
-    pages: 31,
+    pages: 33,
     abstract:
       "This report presents a five-dimension framework for assessing the economic cycle through growth, employment, inflation, financial conditions and credit. It defines practical thresholds for eight macroeconomic regimes, maps each regime to expected equity-market behavior, and outlines the decision rules and transmission mechanisms behind soft-landing, stagflation and hard-landing pathways.",
     takeaways: [

@@ -94,7 +94,7 @@ The Memory Cycle Tracker therefore divides the cycle into twelve economic stages
 
 The framework is designed around the sequence:
 
-> **Earnings direction → revision momentum → leading price signal → cycle height → valuation confirmation**
+> **Earnings direction $\rightarrow$ revision momentum $\rightarrow$ leading price signal $\rightarrow$ cycle height $\rightarrow$ valuation confirmation**
 
 ## Core Variables
 

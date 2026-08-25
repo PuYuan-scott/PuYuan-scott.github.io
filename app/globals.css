@@ -545,7 +545,7 @@ nav a:focus-visible {
 }
 
 .insight-article-header {
-  padding-bottom: 44px;
+  padding-bottom: 34px;
   border-bottom: 1px solid var(--ink);
 }
 
@@ -592,48 +592,52 @@ nav a:focus-visible {
 
 .insight-content {
   max-width: 760px;
-  margin: 58px auto 0;
+  margin: 40px auto 0;
   color: #27323a;
   font-family: var(--serif);
-  font-size: 19px;
-  line-height: 1.86;
+  font-size: 18px;
+  line-height: 1.68;
 }
 
 .insight-content p {
-  margin-bottom: 28px;
+  margin-bottom: 15px;
 }
 
 .insight-content h2 {
-  margin: 52px 0 20px;
+  margin: 36px 0 12px;
   color: var(--ink);
-  font-size: 31px;
+  font-size: 29px;
   font-weight: 400;
   letter-spacing: -0.015em;
-  line-height: 1.25;
+  line-height: 1.22;
+}
+
+.insight-content > h2:first-child {
+  margin-top: 0;
 }
 
 .insight-content ul {
-  margin: 0 0 31px;
+  margin: 4px 0 18px;
   padding-left: 24px;
 }
 
 .insight-content li {
-  margin-bottom: 11px;
+  margin-bottom: 5px;
   padding-left: 5px;
 }
 
 .insight-content blockquote {
-  margin: 38px 0;
-  padding: 7px 0 7px 28px;
+  margin: 23px 0;
+  padding: 4px 0 4px 22px;
   border-left: 3px solid var(--accent);
   color: var(--navy);
-  font-size: 23px;
-  line-height: 1.55;
+  font-size: 21px;
+  line-height: 1.48;
 }
 
 .insight-framework {
-  margin: 34px 0;
-  padding: 24px 28px;
+  margin: 22px 0;
+  padding: 16px 22px;
   background: var(--white);
   border-top: 2px solid var(--navy);
   border-bottom: 1px solid var(--line);
@@ -641,7 +645,7 @@ nav a:focus-visible {
 
 .insight-framework p {
   margin: 0;
-  padding: 11px 0;
+  padding: 7px 0;
   color: var(--navy);
   font-family: var(--sans);
   font-size: 13px;
@@ -656,7 +660,7 @@ nav a:focus-visible {
 
 .insight-table-wrap {
   width: calc(100% + 120px);
-  margin: 31px 0 42px -60px;
+  margin: 22px 0 30px -60px;
   overflow-x: auto;
 }
 
@@ -672,7 +676,7 @@ nav a:focus-visible {
 
 .insight-table th,
 .insight-table td {
-  padding: 14px 15px;
+  padding: 11px 13px;
   border-bottom: 1px solid var(--soft-line);
   text-align: left;
   vertical-align: top;
@@ -711,7 +715,7 @@ nav a:focus-visible {
 }
 
 .insight-sources {
-  margin-top: 58px;
+  margin-top: 38px;
   padding-top: 4px;
   border-top: 1px solid var(--line);
 }
@@ -725,7 +729,7 @@ nav a:focus-visible {
 }
 
 .insight-sources li {
-  margin-bottom: 9px;
+  margin-bottom: 5px;
 }
 
 .insight-sources a {
@@ -744,8 +748,8 @@ nav a:focus-visible {
   align-items: start;
   justify-content: space-between;
   gap: 40px;
-  margin: 65px auto 0;
-  padding-top: 28px;
+  margin: 46px auto 0;
+  padding-top: 22px;
   border-top: 1px solid var(--line);
 }
 

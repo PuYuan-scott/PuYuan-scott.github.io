@@ -2,7 +2,22 @@ import type { InsightBlock } from "@/lib/insights";
 
 type ArticleContentProps = {
   content: InsightBlock[];
+  mergeConsecutiveParagraphs?: boolean;
 };
+
+function mergeParagraphBlocks(content: InsightBlock[]) {
+  return content.reduce<InsightBlock[]>((blocks, block) => {
+    const previousBlock = blocks.at(-1);
+
+    if (block.type === "paragraph" && previousBlock?.type === "paragraph") {
+      previousBlock.text = `${previousBlock.text} ${block.text}`;
+      return blocks;
+    }
+
+    blocks.push({ ...block });
+    return blocks;
+  }, []);
+}
 
 function ArticleBlock({ block }: { block: InsightBlock }) {
   switch (block.type) {
@@ -73,8 +88,15 @@ function ArticleBlock({ block }: { block: InsightBlock }) {
   }
 }
 
-export default function ArticleContent({ content }: ArticleContentProps) {
-  return content.map((block, index) => (
+export default function ArticleContent({
+  content,
+  mergeConsecutiveParagraphs = false,
+}: ArticleContentProps) {
+  const articleBlocks = mergeConsecutiveParagraphs
+    ? mergeParagraphBlocks(content)
+    : content;
+
+  return articleBlocks.map((block, index) => (
     <ArticleBlock block={block} key={`${block.type}-${index}`} />
   ));
 }

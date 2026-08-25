@@ -80,7 +80,10 @@ export default async function InsightPage({ params }: InsightPageProps) {
       </header>
 
       <div className="insight-content">
-        <ArticleContent content={insight.content} />
+        <ArticleContent
+          content={insight.content}
+          mergeConsecutiveParagraphs
+        />
       </div>
 
       <footer className="insight-article-footer">

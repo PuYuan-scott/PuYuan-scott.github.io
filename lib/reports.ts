@@ -48,6 +48,25 @@ export const categories: {
 
 export const reports: ResearchReport[] = [
   {
+    slug: "understanding-the-federal-reserve",
+    category: "economic-analysis",
+    categoryLabel: "Economic Analysis",
+    title:
+      "Understanding the Federal Reserve: From Bank Reserves to Interest Rates, Liquidity, and Asset Pricing",
+    published: "2026-08-29",
+    displayDate: "August 29, 2026",
+    pages: 16,
+    abstract:
+      "This report develops an integrated framework for understanding the Federal Reserve, from the creation and settlement role of bank reserves to policy-rate implementation, QE and QT, Treasury and TGA liquidity flows, repo markets, the yield curve, banking stress, and asset valuation.",
+    takeaways: [
+      "The Federal Reserve creates reserves, while commercial banks create deposits; the distinction is essential to understanding payments, credit, and monetary policy.",
+      "Policy operates through administered rates, money markets, Treasury yields, credit conditions, and asset prices before reaching demand, employment, and inflation.",
+      "For investors, the entire monetary transmission system ultimately affects two variables: expected cash flows and the discount rate.",
+    ],
+    pdf: "/reports/understanding_the_federal_reserve.pdf",
+    featured: false,
+  },
+  {
     slug: "coca-cola-post-ccba-intrinsic-value",
     category: "equity-research",
     categoryLabel: "Equity Research",

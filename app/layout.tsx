@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | Scott Yuan Research",
   },
   description:
-    "Independent equity research, investment reports, economic analysis and short-form insights by Scott Yuan.",
+    "Independent equity research, investment reports, economic analysis, short-form insights and quantitative research tools by Scott Yuan.",
   alternates: {
     types: {
       "application/rss+xml": "/feed.xml",

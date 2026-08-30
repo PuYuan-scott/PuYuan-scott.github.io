@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ReportCard from "@/components/ReportCard";
 import { insightCategory } from "@/lib/insights";
+import { quantProjectCategory } from "@/lib/quant-projects";
 import { categories, reports } from "@/lib/reports";
 
 export default function Home() {
@@ -13,6 +14,10 @@ export default function Home() {
     {
       ...insightCategory,
       action: "Read insights",
+    },
+    {
+      ...quantProjectCategory,
+      action: "Explore projects",
     },
   ];
 
@@ -28,7 +33,7 @@ export default function Home() {
             <p>
               Company research, investment analysis and macroeconomic
               commentary, complemented by short-form perspectives on markets,
-              businesses and valuation.
+              businesses and valuation, plus systematic research tools.
             </p>
             <Link className="text-link" href="/equity-research">
               View published research <span aria-hidden="true">→</span>
@@ -44,7 +49,7 @@ export default function Home() {
       <section className="page-shell categories-section">
         <div className="section-heading">
           <p className="eyebrow">Research Library</p>
-          <h2>Four areas of coverage.</h2>
+          <h2>Five areas of coverage.</h2>
         </div>
         <div className="category-grid">
           {coverageAreas.map((category, index) => (

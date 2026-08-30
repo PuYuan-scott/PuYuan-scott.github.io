@@ -1,5 +1,6 @@
 import { insights } from "@/lib/insights";
 import { investmentArticles } from "@/lib/investment-articles";
+import { quantProjects } from "@/lib/quant-projects";
 import { reports } from "@/lib/reports";
 
 const SITE_URL = "https://puyuan-scott.github.io";
@@ -56,7 +57,20 @@ function feedItems(): FeedItem[] {
     path: `/investment-reports/${article.slug}/`,
   }));
 
-  return [...reportItems, ...insightItems, ...investmentItems].sort(
+  const quantProjectItems: FeedItem[] = quantProjects.map((project) => ({
+    title: project.title,
+    category: "Quant Projects",
+    published: project.published,
+    description: project.abstract,
+    path: `/quant-projects/${project.slug}/`,
+  }));
+
+  return [
+    ...reportItems,
+    ...insightItems,
+    ...investmentItems,
+    ...quantProjectItems,
+  ].sort(
     (a, b) =>
       b.published.localeCompare(a.published) || a.title.localeCompare(b.title),
   );
@@ -85,7 +99,7 @@ export async function GET() {
   <channel>
     <title>Scott Yuan Research Updates</title>
     <link>${SITE_URL}/</link>
-    <description>New equity research, investment decisions, economic analysis and insights from Scott Yuan Research.</description>
+    <description>New equity research, investment decisions, economic analysis, insights and quantitative projects from Scott Yuan Research.</description>
     <language>en</language>
     <lastBuildDate>${lastBuildDate}</lastBuildDate>
     <atom:link href="${SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />

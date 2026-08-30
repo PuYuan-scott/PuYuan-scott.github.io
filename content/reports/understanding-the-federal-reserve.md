@@ -15,7 +15,7 @@ These questions may appear to belong to different fields, but they fit within a 
 
 The complete system can be summarized as follows:
 
-> **Economic Data | Fed Reaction Function | Policy Rate & Balance Sheet | Reserves & Money Markets | Treasury Yields | Financial Conditions | Consumption, Investment & Employment | Growth & Inflation | Fed**
+> **Economic Data — Fed Reaction Function — Policy Rate & Balance Sheet — Reserves & Money Markets — Treasury Yields — Financial Conditions — Consumption, Investment & Employment — Growth & Inflation — Fed**
 
 \newpage
 
@@ -209,7 +209,7 @@ Silicon Valley Bank is a clear example. SVB accumulated long-duration Treasuries
 
 The mechanism can be summarized as:
 
-> **Duration Risk + Concentrated Uninsured Deposits | Liquidity Stress | Forced Asset Sales | Capital Loss | Confidence Crisis**
+> **Duration Risk + Concentrated Uninsured Deposits — Liquidity Stress — Forced Asset Sales — Capital Loss — Confidence Crisis**
 
 As lender of last resort, the Fed can provide reserves through tools such as the discount window and alleviate short-term liquidity stress. If the true value of a bank's assets is already below its liabilities, however, additional liquidity alone cannot permanently resolve insolvency.
 
@@ -274,7 +274,7 @@ Once the Federal Reserve is understood properly, the central question is no long
 
 The more important task is to understand the entire feedback loop:
 
-> **Economic Data | Fed Reaction Function | Policy Rate & Balance Sheet | Reserves & Money Markets | Treasury Yield Curve | Financial Conditions | Consumption, CapEx & Employment | Growth & Inflation | Fed**
+> **Economic Data — Fed Reaction Function — Policy Rate & Balance Sheet — Reserves & Money Markets — Treasury Yield Curve — Financial Conditions — Consumption, CapEx & Employment — Growth & Inflation — Fed**
 
 For equity investors, this complex system can ultimately be compressed into two variables:
 

@@ -94,7 +94,7 @@ export default async function QuantProjectPage({
       <section className="quant-project-section">
         <div className="quant-section-heading">
           <p className="eyebrow">Research Design</p>
-          <h2>A four-dimension confirmation framework.</h2>
+          <h2>{project.frameworkTitle}</h2>
         </div>
         <div className="quant-framework-grid">
           {project.framework.map((item, index) => (
@@ -110,7 +110,7 @@ export default async function QuantProjectPage({
       <section className="quant-project-section quant-project-details">
         <div>
           <p className="eyebrow">What It Includes</p>
-          <h2>From market regime to individual ETF confirmation.</h2>
+          <h2>{project.capabilitiesTitle}</h2>
         </div>
         <ul className="quant-capability-list">
           {project.capabilities.map((capability) => (
